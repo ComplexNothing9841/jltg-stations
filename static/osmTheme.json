@@ -1,0 +1,186 @@
+{
+	"version": 8,
+	"sources": {
+		"openmaptiles": {
+			"type": "vector",
+			"url": "https://tiles.openfreemap.org/planet"
+		}
+	},
+	"sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
+	"glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+	"layers": [
+		{
+			"id": "background",
+			"type": "background",
+			"paint": {
+				"background-color": "rgb(253,253,253)"
+			}
+		},
+
+		{
+			"id": "water",
+			"type": "fill",
+			"source": "openmaptiles",
+			"source-layer": "water",
+			"paint": {
+				"fill-color": "rgb(131,169,182)"
+			}
+		},
+
+		{
+			"id": "waterway-river",
+			"type": "line",
+			"source": "openmaptiles",
+			"source-layer": "waterway",
+			"filter": ["==", ["get", "class"], "river"],
+			"paint": {
+				"line-color": "rgb(190,221,243)",
+				"line-width": [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					7,
+					2,
+					9,
+					3,
+					10,
+					4,
+					15,
+					5,
+					17,
+					9,
+					18,
+					20,
+					20,
+					60
+				]
+			}
+		},
+
+		{
+			"id": "waterway-stream",
+			"type": "line",
+			"source": "openmaptiles",
+			"source-layer": "waterway",
+			"filter": ["==", ["get", "class"], "stream"],
+			"paint": {
+				"line-color": "rgb(190,221,243)",
+				"line-width": [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					8,
+					1,
+					14,
+					2,
+					15,
+					3,
+					17,
+					7,
+					18,
+					12,
+					20,
+					30
+				]
+			}
+		},
+
+		{
+			"id": "landcover-forest",
+			"type": "fill",
+			"source": "openmaptiles",
+			"source-layer": "landcover",
+			"filter": ["==", ["get", "class"], "forest"],
+			"paint": {
+				"fill-color": "rgb(102,170,68)",
+				"fill-opacity": ["interpolate", ["linear"], ["zoom"], 7, 0, 8, 0.1]
+			}
+		},
+
+		{
+			"id": "landcover-grass",
+			"type": "fill",
+			"source": "openmaptiles",
+			"source-layer": "landcover",
+			"filter": ["in", ["get", "class"], ["literal", ["grass", "grassland", "meadow"]]],
+			"paint": {
+				"fill-color": "rgb(216,232,200)",
+				"fill-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+			}
+		},
+
+		{
+			"id": "landcover-sand",
+			"type": "fill",
+			"source": "openmaptiles",
+			"source-layer": "landcover",
+			"filter": ["==", ["get", "class"], "sand"],
+			"paint": {
+				"fill-color": "rgb(250,250,237)"
+			}
+		},
+
+		{
+			"id": "landcover-wetland",
+			"type": "fill",
+			"source": "openmaptiles",
+			"source-layer": "landcover",
+			"filter": ["==", ["get", "class"], "wetland"],
+			"paint": {
+				"fill-color": "rgb(211,230,219)"
+			}
+		},
+
+		{
+			"id": "road-major",
+			"type": "line",
+			"source": "openmaptiles",
+			"source-layer": "transportation",
+			"filter": ["in", ["get", "class"], ["literal", ["primary", "secondary", "trunk"]]],
+			"paint": {
+				"line-color": "rgb(255,238,170)",
+				"line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.5, 12, 2, 16, 6, 20, 20],
+				"line-opacity": 0.35
+			}
+		},
+
+		{
+			"id": "road-minor",
+			"type": "line",
+			"source": "openmaptiles",
+			"source-layer": "transportation",
+			"filter": ["in", ["get", "class"], ["literal", ["tertiary", "residential", "unclassified"]]],
+			"paint": {
+				"line-color": "rgb(255,255,255)",
+				"line-width": ["interpolate", ["linear"], ["zoom"], 12, 0.5, 16, 3, 20, 10],
+				"line-opacity": 0.25
+			}
+		},
+
+		{
+			"id": "road-service",
+			"type": "line",
+			"source": "openmaptiles",
+			"source-layer": "transportation",
+			"filter": ["==", ["get", "class"], "service"],
+			"paint": {
+				"line-color": "rgb(240,240,240)",
+				"line-width": ["interpolate", ["linear"], ["zoom"], 14, 0.5, 18, 2, 20, 6],
+				"line-opacity": 0.15
+			}
+		},
+
+		{
+			"id": "rail",
+			"type": "line",
+			"source": "openmaptiles",
+			"source-layer": "transportation",
+			"filter": ["==", ["get", "class"], "rail"],
+			"paint": {
+				"line-color": "rgba(104,98,104,1)",
+				"line-width": ["interpolate", ["linear"], ["zoom"], 6, 4, 10, 6, 14, 8, 18, 9]
+			}
+		}
+	],
+	"id": "5a4fvgg"
+}

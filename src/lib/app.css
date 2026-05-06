@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+	--bg: linear-gradient(180deg, #fff7df 0%, #ffe1b8 100%);
+	--panel: rgba(255, 252, 245, 0.94);
+	--panel-strong: #fffdf7;
+	--text: #1f1a13;
+	--muted: #4a3525;
+	--accent: #ff7e36;
+	--line: rgba(31, 26, 19, 0.12);
+	--shadow: 0 18px 40px rgba(126, 80, 28, 0.15);
+	font-family: 'Trebuchet MS', 'Avenir Next', 'Segoe UI', sans-serif;
+	color: var(--text);
+	background: var(--bg);
+}
+
+html,
+body,
+#svelte {
+	margin: 0;
+	height: 100%;
+	min-height: 100%;
+	background: var(--bg);
+	overflow: hidden;
+}
+
+body {
+	min-height: 100dvh;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+.primary-button,
+.ghost-button {
+	border-radius: 999px;
+	padding: 0.7rem 1rem;
+	cursor: pointer;
+	border: 0;
+}
+
+.primary-button {
+	background: linear-gradient(135deg, var(--accent), #ffb03a);
+	color: white;
+}
+
+.ghost-button {
+	background: white;
+	border: 1px solid var(--line);
+}

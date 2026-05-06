@@ -1,0 +1,4204 @@
+{
+  "version": "taiwan-railways",
+  "name": "Taiwan",
+  "teams": [
+    {
+      "id": "sam-mike",
+      "name": "Sam & Mike",
+      "color": "#f47342"
+    },
+    {
+      "id": "ben-adam",
+      "name": "Ben & Adam",
+      "color": "#3da493"
+    }
+  ],
+  "stations": [
+    {
+      "id": "0900",
+      "name": "Keelung",
+      "latitude": 25.13191,
+      "longitude": 121.73837,
+      "adjacentStationIds": [
+        "0910"
+      ],
+      "challenge": {
+        "id": "C0900",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.13191,
+        "longitude": 121.73837
+      }
+    },
+    {
+      "id": "0910",
+      "name": "Sankeng",
+      "latitude": 25.12305,
+      "longitude": 121.74202,
+      "adjacentStationIds": [
+        "0900",
+        "0920"
+      ],
+      "challenge": {
+        "id": "C0910",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.12305,
+        "longitude": 121.74202
+      }
+    },
+    {
+      "id": "0920",
+      "name": "Badu",
+      "latitude": 25.10838,
+      "longitude": 121.72904,
+      "adjacentStationIds": [
+        "0910",
+        "0930",
+        "7390"
+      ],
+      "challenge": {
+        "id": "C0920",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 25.10838,
+        "longitude": 121.72904
+      }
+    },
+    {
+      "id": "0930",
+      "name": "Qidu",
+      "latitude": 25.09294,
+      "longitude": 121.71415,
+      "adjacentStationIds": [
+        "0920",
+        "0940"
+      ],
+      "challenge": {
+        "id": "C0930",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 25.09294,
+        "longitude": 121.71415
+      }
+    },
+    {
+      "id": "0940",
+      "name": "Baifu",
+      "latitude": 25.07795,
+      "longitude": 121.69379,
+      "adjacentStationIds": [
+        "0930",
+        "0950"
+      ],
+      "challenge": {
+        "id": "C0940",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.07795,
+        "longitude": 121.69379
+      }
+    },
+    {
+      "id": "0950",
+      "name": "Wudu",
+      "latitude": 25.07799,
+      "longitude": 121.66758,
+      "adjacentStationIds": [
+        "0940",
+        "0960"
+      ],
+      "challenge": {
+        "id": "C0950",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.07799,
+        "longitude": 121.66758
+      }
+    },
+    {
+      "id": "0960",
+      "name": "Xizhi",
+      "latitude": 25.06789,
+      "longitude": 121.66115,
+      "adjacentStationIds": [
+        "0950",
+        "0970"
+      ],
+      "challenge": {
+        "id": "C0960",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 25.06789,
+        "longitude": 121.66115
+      }
+    },
+    {
+      "id": "0970",
+      "name": "Xike",
+      "latitude": 25.06405,
+      "longitude": 121.65237,
+      "adjacentStationIds": [
+        "0960",
+        "0980"
+      ],
+      "challenge": {
+        "id": "C0970",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 25.06405,
+        "longitude": 121.65237
+      }
+    },
+    {
+      "id": "0980",
+      "name": "Nangang",
+      "latitude": 25.05348,
+      "longitude": 121.60706,
+      "adjacentStationIds": [
+        "0970",
+        "0990"
+      ],
+      "challenge": {
+        "id": "C0980",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.05348,
+        "longitude": 121.60706
+      }
+    },
+    {
+      "id": "0990",
+      "name": "Songshan",
+      "latitude": 25.04921,
+      "longitude": 121.57799,
+      "adjacentStationIds": [
+        "0980",
+        "1000"
+      ],
+      "challenge": {
+        "id": "C0990",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.04921,
+        "longitude": 121.57799
+      }
+    },
+    {
+      "id": "1000",
+      "name": "Taipei",
+      "latitude": 25.04771,
+      "longitude": 121.51784,
+      "adjacentStationIds": [
+        "0990",
+        "1001"
+      ],
+      "challenge": {
+        "id": "C1000",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 25.04771,
+        "longitude": 121.51784
+      }
+    },
+    {
+      "id": "1001",
+      "name": "Taipei Surround Island",
+      "latitude": 25.04774,
+      "longitude": 121.51711,
+      "adjacentStationIds": [
+        "1000",
+        "1010"
+      ],
+      "challenge": {
+        "id": "C1001",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.04774,
+        "longitude": 121.51711
+      }
+    },
+    {
+      "id": "1010",
+      "name": "Wanhua",
+      "latitude": 25.03357,
+      "longitude": 121.5002,
+      "adjacentStationIds": [
+        "1001",
+        "1020"
+      ],
+      "challenge": {
+        "id": "C1010",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 25.03357,
+        "longitude": 121.5002
+      }
+    },
+    {
+      "id": "1020",
+      "name": "Banqiao",
+      "latitude": 25.01401,
+      "longitude": 121.46406,
+      "adjacentStationIds": [
+        "1010",
+        "1030"
+      ],
+      "challenge": {
+        "id": "C1020",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.01401,
+        "longitude": 121.46406
+      }
+    },
+    {
+      "id": "1030",
+      "name": "Fuzhou",
+      "latitude": 25.00419,
+      "longitude": 121.44477,
+      "adjacentStationIds": [
+        "1020",
+        "1040"
+      ],
+      "challenge": {
+        "id": "C1030",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.00419,
+        "longitude": 121.44477
+      }
+    },
+    {
+      "id": "1040",
+      "name": "Shulin",
+      "latitude": 24.99121,
+      "longitude": 121.42481,
+      "adjacentStationIds": [
+        "1030",
+        "1050"
+      ],
+      "challenge": {
+        "id": "C1040",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.99121,
+        "longitude": 121.42481
+      }
+    },
+    {
+      "id": "1050",
+      "name": "South Shulin",
+      "latitude": 24.98044,
+      "longitude": 121.40884,
+      "adjacentStationIds": [
+        "1040",
+        "1060"
+      ],
+      "challenge": {
+        "id": "C1050",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.98044,
+        "longitude": 121.40884
+      }
+    },
+    {
+      "id": "1060",
+      "name": "Shanjia",
+      "latitude": 24.97273,
+      "longitude": 121.39254,
+      "adjacentStationIds": [
+        "1050",
+        "1070"
+      ],
+      "challenge": {
+        "id": "C1060",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.97273,
+        "longitude": 121.39254
+      }
+    },
+    {
+      "id": "1070",
+      "name": "Yingge",
+      "latitude": 24.95432,
+      "longitude": 121.35535,
+      "adjacentStationIds": [
+        "1060",
+        "1075"
+      ],
+      "challenge": {
+        "id": "C1070",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.95432,
+        "longitude": 121.35535
+      }
+    },
+    {
+      "id": "1075",
+      "name": "Fengming",
+      "latitude": 24.97268,
+      "longitude": 121.33658,
+      "adjacentStationIds": [
+        "1070",
+        "1080"
+      ],
+      "challenge": {
+        "id": "C1075",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.97268,
+        "longitude": 121.33658
+      }
+    },
+    {
+      "id": "1080",
+      "name": "Taoyuan",
+      "latitude": 24.98942,
+      "longitude": 121.31384,
+      "adjacentStationIds": [
+        "1075",
+        "1090"
+      ],
+      "challenge": {
+        "id": "C1080",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.98942,
+        "longitude": 121.31384
+      }
+    },
+    {
+      "id": "1090",
+      "name": "Neili",
+      "latitude": 24.97281,
+      "longitude": 121.25826,
+      "adjacentStationIds": [
+        "1080",
+        "1100"
+      ],
+      "challenge": {
+        "id": "C1090",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.97281,
+        "longitude": 121.25826
+      }
+    },
+    {
+      "id": "1100",
+      "name": "Zhongli Taoyuan",
+      "latitude": 24.95369,
+      "longitude": 121.22556,
+      "adjacentStationIds": [
+        "1090",
+        "1110"
+      ],
+      "challenge": {
+        "id": "C1100",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.95369,
+        "longitude": 121.22556
+      }
+    },
+    {
+      "id": "1110",
+      "name": "Puxin",
+      "latitude": 24.91945,
+      "longitude": 121.18366,
+      "adjacentStationIds": [
+        "1100",
+        "1120"
+      ],
+      "challenge": {
+        "id": "C1110",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.91945,
+        "longitude": 121.18366
+      }
+    },
+    {
+      "id": "1120",
+      "name": "Yangmei",
+      "latitude": 24.91402,
+      "longitude": 121.14641,
+      "adjacentStationIds": [
+        "1110",
+        "1130"
+      ],
+      "challenge": {
+        "id": "C1120",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.91402,
+        "longitude": 121.14641
+      }
+    },
+    {
+      "id": "1130",
+      "name": "Fugang",
+      "latitude": 24.93445,
+      "longitude": 121.08308,
+      "adjacentStationIds": [
+        "1120",
+        "1140"
+      ],
+      "challenge": {
+        "id": "C1130",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.93445,
+        "longitude": 121.08308
+      }
+    },
+    {
+      "id": "1140",
+      "name": "Xinfu",
+      "latitude": 24.93109,
+      "longitude": 121.06751,
+      "adjacentStationIds": [
+        "1130",
+        "1150"
+      ],
+      "challenge": {
+        "id": "C1140",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.93109,
+        "longitude": 121.06751
+      }
+    },
+    {
+      "id": "1150",
+      "name": "Beihu",
+      "latitude": 24.92201,
+      "longitude": 121.05592,
+      "adjacentStationIds": [
+        "1140",
+        "1160"
+      ],
+      "challenge": {
+        "id": "C1150",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.92201,
+        "longitude": 121.05592
+      }
+    },
+    {
+      "id": "1160",
+      "name": "Hukou",
+      "latitude": 24.90288,
+      "longitude": 121.04411,
+      "adjacentStationIds": [
+        "1150",
+        "1170"
+      ],
+      "challenge": {
+        "id": "C1160",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.90288,
+        "longitude": 121.04411
+      }
+    },
+    {
+      "id": "1170",
+      "name": "Xinfeng",
+      "latitude": 24.86939,
+      "longitude": 120.99626,
+      "adjacentStationIds": [
+        "1160",
+        "1180"
+      ],
+      "challenge": {
+        "id": "C1170",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.86939,
+        "longitude": 120.99626
+      }
+    },
+    {
+      "id": "1180",
+      "name": "Zhubei",
+      "latitude": 24.83892,
+      "longitude": 121.00936,
+      "adjacentStationIds": [
+        "1170",
+        "1190"
+      ],
+      "challenge": {
+        "id": "C1180",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.83892,
+        "longitude": 121.00936
+      }
+    },
+    {
+      "id": "1190",
+      "name": "North Hsinchu",
+      "latitude": 24.80875,
+      "longitude": 120.98381,
+      "adjacentStationIds": [
+        "1180",
+        "1191",
+        "1210"
+      ],
+      "challenge": {
+        "id": "C1190",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.80875,
+        "longitude": 120.98381
+      }
+    },
+    {
+      "id": "1191",
+      "name": "Qianjia",
+      "latitude": 24.80657,
+      "longitude": 121.0034,
+      "adjacentStationIds": [
+        "1190",
+        "1192"
+      ],
+      "challenge": {
+        "id": "C1191",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.80657,
+        "longitude": 121.0034
+      }
+    },
+    {
+      "id": "1192",
+      "name": "Xinzhuang",
+      "latitude": 24.78811,
+      "longitude": 121.02196,
+      "adjacentStationIds": [
+        "1191",
+        "1193"
+      ],
+      "challenge": {
+        "id": "C1192",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.78811,
+        "longitude": 121.02196
+      }
+    },
+    {
+      "id": "1193",
+      "name": "Zhuzhong",
+      "latitude": 24.78145,
+      "longitude": 121.03141,
+      "adjacentStationIds": [
+        "1192",
+        "1194",
+        "1201"
+      ],
+      "challenge": {
+        "id": "C1193",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.78145,
+        "longitude": 121.03141
+      }
+    },
+    {
+      "id": "1194",
+      "name": "Liujia",
+      "latitude": 24.80766,
+      "longitude": 121.03941,
+      "adjacentStationIds": [
+        "1193"
+      ],
+      "challenge": {
+        "id": "C1194",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.80766,
+        "longitude": 121.03941
+      }
+    },
+    {
+      "id": "1201",
+      "name": "Shangyuan",
+      "latitude": 24.77776,
+      "longitude": 121.05582,
+      "adjacentStationIds": [
+        "1193",
+        "1202"
+      ],
+      "challenge": {
+        "id": "C1201",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.77776,
+        "longitude": 121.05582
+      }
+    },
+    {
+      "id": "1202",
+      "name": "Ronghua",
+      "latitude": 24.74839,
+      "longitude": 121.08319,
+      "adjacentStationIds": [
+        "1201",
+        "1203"
+      ],
+      "challenge": {
+        "id": "C1202",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.74839,
+        "longitude": 121.08319
+      }
+    },
+    {
+      "id": "1203",
+      "name": "Zhudong",
+      "latitude": 24.73823,
+      "longitude": 121.09472,
+      "adjacentStationIds": [
+        "1202",
+        "1204"
+      ],
+      "challenge": {
+        "id": "C1203",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.73823,
+        "longitude": 121.09472
+      }
+    },
+    {
+      "id": "1204",
+      "name": "Hengshan",
+      "latitude": 24.72041,
+      "longitude": 121.11772,
+      "adjacentStationIds": [
+        "1203",
+        "1205"
+      ],
+      "challenge": {
+        "id": "C1204",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.72041,
+        "longitude": 121.11772
+      }
+    },
+    {
+      "id": "1205",
+      "name": "Jiuzantou",
+      "latitude": 24.72062,
+      "longitude": 121.13622,
+      "adjacentStationIds": [
+        "1204",
+        "1206"
+      ],
+      "challenge": {
+        "id": "C1205",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.72062,
+        "longitude": 121.13622
+      }
+    },
+    {
+      "id": "1206",
+      "name": "Hexing",
+      "latitude": 24.71667,
+      "longitude": 121.15437,
+      "adjacentStationIds": [
+        "1205",
+        "1207"
+      ],
+      "challenge": {
+        "id": "C1206",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.71667,
+        "longitude": 121.15437
+      }
+    },
+    {
+      "id": "1207",
+      "name": "Fugui",
+      "latitude": 24.71551,
+      "longitude": 121.16743,
+      "adjacentStationIds": [
+        "1206",
+        "1208"
+      ],
+      "challenge": {
+        "id": "C1207",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.71551,
+        "longitude": 121.16743
+      }
+    },
+    {
+      "id": "1208",
+      "name": "Neiwan",
+      "latitude": 24.70535,
+      "longitude": 121.18255,
+      "adjacentStationIds": [
+        "1207"
+      ],
+      "challenge": {
+        "id": "C1208",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.70535,
+        "longitude": 121.18255
+      }
+    },
+    {
+      "id": "1210",
+      "name": "Hsinchu",
+      "latitude": 24.80157,
+      "longitude": 120.97157,
+      "adjacentStationIds": [
+        "1190",
+        "1220"
+      ],
+      "challenge": {
+        "id": "C1210",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.80157,
+        "longitude": 120.97157
+      }
+    },
+    {
+      "id": "1220",
+      "name": "Sanxingqiao",
+      "latitude": 24.78731,
+      "longitude": 120.92844,
+      "adjacentStationIds": [
+        "1210",
+        "1230"
+      ],
+      "challenge": {
+        "id": "C1220",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.78731,
+        "longitude": 120.92844
+      }
+    },
+    {
+      "id": "1230",
+      "name": "Xiangshan",
+      "latitude": 24.76311,
+      "longitude": 120.91388,
+      "adjacentStationIds": [
+        "1220",
+        "1240"
+      ],
+      "challenge": {
+        "id": "C1230",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.76311,
+        "longitude": 120.91388
+      }
+    },
+    {
+      "id": "1240",
+      "name": "Qiding",
+      "latitude": 24.72291,
+      "longitude": 120.87183,
+      "adjacentStationIds": [
+        "1230",
+        "1250"
+      ],
+      "challenge": {
+        "id": "C1240",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.72291,
+        "longitude": 120.87183
+      }
+    },
+    {
+      "id": "1250",
+      "name": "Zhunan",
+      "latitude": 24.68662,
+      "longitude": 120.8806,
+      "adjacentStationIds": [
+        "1240",
+        "2110",
+        "3140"
+      ],
+      "challenge": {
+        "id": "C1250",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.68662,
+        "longitude": 120.8806
+      }
+    },
+    {
+      "id": "2110",
+      "name": "Tanwen",
+      "latitude": 24.65641,
+      "longitude": 120.85825,
+      "adjacentStationIds": [
+        "1250",
+        "2120"
+      ],
+      "challenge": {
+        "id": "C2110",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.65641,
+        "longitude": 120.85825
+      }
+    },
+    {
+      "id": "2120",
+      "name": "Dashan",
+      "latitude": 24.64565,
+      "longitude": 120.80376,
+      "adjacentStationIds": [
+        "2110",
+        "2130"
+      ],
+      "challenge": {
+        "id": "C2120",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.64565,
+        "longitude": 120.80376
+      }
+    },
+    {
+      "id": "2130",
+      "name": "Houlong",
+      "latitude": 24.61621,
+      "longitude": 120.78731,
+      "adjacentStationIds": [
+        "2120",
+        "2140"
+      ],
+      "challenge": {
+        "id": "C2130",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.61621,
+        "longitude": 120.78731
+      }
+    },
+    {
+      "id": "2140",
+      "name": "Longgang",
+      "latitude": 24.61169,
+      "longitude": 120.75812,
+      "adjacentStationIds": [
+        "2130",
+        "2150"
+      ],
+      "challenge": {
+        "id": "C2140",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.61169,
+        "longitude": 120.75812
+      }
+    },
+    {
+      "id": "2150",
+      "name": "Baishatun",
+      "latitude": 24.56481,
+      "longitude": 120.70824,
+      "adjacentStationIds": [
+        "2140",
+        "2160"
+      ],
+      "challenge": {
+        "id": "C2150",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.56481,
+        "longitude": 120.70824
+      }
+    },
+    {
+      "id": "2160",
+      "name": "Xinpu",
+      "latitude": 24.54018,
+      "longitude": 120.69518,
+      "adjacentStationIds": [
+        "2150",
+        "2170"
+      ],
+      "challenge": {
+        "id": "C2160",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.54018,
+        "longitude": 120.69518
+      }
+    },
+    {
+      "id": "2170",
+      "name": "Tongxiao",
+      "latitude": 24.49141,
+      "longitude": 120.67843,
+      "adjacentStationIds": [
+        "2160",
+        "2180"
+      ],
+      "challenge": {
+        "id": "C2170",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.49141,
+        "longitude": 120.67843
+      }
+    },
+    {
+      "id": "2180",
+      "name": "Yuanli",
+      "latitude": 24.44344,
+      "longitude": 120.65146,
+      "adjacentStationIds": [
+        "2170",
+        "2190"
+      ],
+      "challenge": {
+        "id": "C2180",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.44344,
+        "longitude": 120.65146
+      }
+    },
+    {
+      "id": "2190",
+      "name": "Rinan",
+      "latitude": 24.37815,
+      "longitude": 120.65412,
+      "adjacentStationIds": [
+        "2180",
+        "2200"
+      ],
+      "challenge": {
+        "id": "C2190",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.37815,
+        "longitude": 120.65412
+      }
+    },
+    {
+      "id": "2200",
+      "name": "Dajia",
+      "latitude": 24.34448,
+      "longitude": 120.62702,
+      "adjacentStationIds": [
+        "2190",
+        "2210"
+      ],
+      "challenge": {
+        "id": "C2200",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.34448,
+        "longitude": 120.62702
+      }
+    },
+    {
+      "id": "2210",
+      "name": "Taichung Port",
+      "latitude": 24.30441,
+      "longitude": 120.60231,
+      "adjacentStationIds": [
+        "2200",
+        "2220"
+      ],
+      "challenge": {
+        "id": "C2210",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.30441,
+        "longitude": 120.60231
+      }
+    },
+    {
+      "id": "2220",
+      "name": "Qingshui",
+      "latitude": 24.26364,
+      "longitude": 120.56918,
+      "adjacentStationIds": [
+        "2210",
+        "2230"
+      ],
+      "challenge": {
+        "id": "C2220",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.26364,
+        "longitude": 120.56918
+      }
+    },
+    {
+      "id": "2230",
+      "name": "Shalu",
+      "latitude": 24.23702,
+      "longitude": 120.55752,
+      "adjacentStationIds": [
+        "2220",
+        "2240"
+      ],
+      "challenge": {
+        "id": "C2230",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.23702,
+        "longitude": 120.55752
+      }
+    },
+    {
+      "id": "2240",
+      "name": "Longjing",
+      "latitude": 24.19748,
+      "longitude": 120.54335,
+      "adjacentStationIds": [
+        "2230",
+        "2250"
+      ],
+      "challenge": {
+        "id": "C2240",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.19748,
+        "longitude": 120.54335
+      }
+    },
+    {
+      "id": "2250",
+      "name": "Dadu",
+      "latitude": 24.15417,
+      "longitude": 120.54249,
+      "adjacentStationIds": [
+        "2240",
+        "2260"
+      ],
+      "challenge": {
+        "id": "C2250",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.15417,
+        "longitude": 120.54249
+      }
+    },
+    {
+      "id": "2260",
+      "name": "Zhuifen",
+      "latitude": 24.12051,
+      "longitude": 120.57018,
+      "adjacentStationIds": [
+        "2250",
+        "3350",
+        "3360"
+      ],
+      "challenge": {
+        "id": "C2260",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.12051,
+        "longitude": 120.57018
+      }
+    },
+    {
+      "id": "3140",
+      "name": "Zaoqiao",
+      "latitude": 24.64186,
+      "longitude": 120.86721,
+      "adjacentStationIds": [
+        "1250",
+        "3150"
+      ],
+      "challenge": {
+        "id": "C3140",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.64186,
+        "longitude": 120.86721
+      }
+    },
+    {
+      "id": "3150",
+      "name": "Fengfu",
+      "latitude": 24.60429,
+      "longitude": 120.82637,
+      "adjacentStationIds": [
+        "3140",
+        "3160"
+      ],
+      "challenge": {
+        "id": "C3150",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.60429,
+        "longitude": 120.82637
+      }
+    },
+    {
+      "id": "3160",
+      "name": "Miaoli",
+      "latitude": 24.57001,
+      "longitude": 120.82233,
+      "adjacentStationIds": [
+        "3150",
+        "3170"
+      ],
+      "challenge": {
+        "id": "C3160",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.57001,
+        "longitude": 120.82233
+      }
+    },
+    {
+      "id": "3170",
+      "name": "Nanshi",
+      "latitude": 24.52246,
+      "longitude": 120.79154,
+      "adjacentStationIds": [
+        "3160",
+        "3180"
+      ],
+      "challenge": {
+        "id": "C3170",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.52246,
+        "longitude": 120.79154
+      }
+    },
+    {
+      "id": "3180",
+      "name": "Tongluo",
+      "latitude": 24.48713,
+      "longitude": 120.78591,
+      "adjacentStationIds": [
+        "3170",
+        "3190"
+      ],
+      "challenge": {
+        "id": "C3180",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.48713,
+        "longitude": 120.78591
+      }
+    },
+    {
+      "id": "3190",
+      "name": "Sanyi",
+      "latitude": 24.42066,
+      "longitude": 120.77393,
+      "adjacentStationIds": [
+        "3180",
+        "3210"
+      ],
+      "challenge": {
+        "id": "C3190",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.42066,
+        "longitude": 120.77393
+      }
+    },
+    {
+      "id": "3210",
+      "name": "Tai'an",
+      "latitude": 24.33146,
+      "longitude": 120.74181,
+      "adjacentStationIds": [
+        "3190",
+        "3220"
+      ],
+      "challenge": {
+        "id": "C3210",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.33146,
+        "longitude": 120.74181
+      }
+    },
+    {
+      "id": "3220",
+      "name": "Houli",
+      "latitude": 24.30933,
+      "longitude": 120.73288,
+      "adjacentStationIds": [
+        "3210",
+        "3230"
+      ],
+      "challenge": {
+        "id": "C3220",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.30933,
+        "longitude": 120.73288
+      }
+    },
+    {
+      "id": "3230",
+      "name": "Fengyuan",
+      "latitude": 24.25438,
+      "longitude": 120.72374,
+      "adjacentStationIds": [
+        "3220",
+        "3240"
+      ],
+      "challenge": {
+        "id": "C3230",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.25438,
+        "longitude": 120.72374
+      }
+    },
+    {
+      "id": "3240",
+      "name": "Lilin",
+      "latitude": 24.23461,
+      "longitude": 120.7106,
+      "adjacentStationIds": [
+        "3230",
+        "3250"
+      ],
+      "challenge": {
+        "id": "C3240",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.23461,
+        "longitude": 120.7106
+      }
+    },
+    {
+      "id": "3250",
+      "name": "Tanzi",
+      "latitude": 24.21214,
+      "longitude": 120.70564,
+      "adjacentStationIds": [
+        "3240",
+        "3260"
+      ],
+      "challenge": {
+        "id": "C3250",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.21214,
+        "longitude": 120.70564
+      }
+    },
+    {
+      "id": "3260",
+      "name": "Toujiacuo",
+      "latitude": 24.19572,
+      "longitude": 120.70398,
+      "adjacentStationIds": [
+        "3250",
+        "3270"
+      ],
+      "challenge": {
+        "id": "C3260",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.19572,
+        "longitude": 120.70398
+      }
+    },
+    {
+      "id": "3270",
+      "name": "Songzhu",
+      "latitude": 24.18035,
+      "longitude": 120.70193,
+      "adjacentStationIds": [
+        "3260",
+        "3280"
+      ],
+      "challenge": {
+        "id": "C3270",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.18035,
+        "longitude": 120.70193
+      }
+    },
+    {
+      "id": "3280",
+      "name": "Taiyuan",
+      "latitude": 24.16449,
+      "longitude": 120.69988,
+      "adjacentStationIds": [
+        "3270",
+        "3290"
+      ],
+      "challenge": {
+        "id": "C3280",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.16449,
+        "longitude": 120.69988
+      }
+    },
+    {
+      "id": "3290",
+      "name": "Jingwu",
+      "latitude": 24.14887,
+      "longitude": 120.69784,
+      "adjacentStationIds": [
+        "3280",
+        "3300"
+      ],
+      "challenge": {
+        "id": "C3290",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.14887,
+        "longitude": 120.69784
+      }
+    },
+    {
+      "id": "3300",
+      "name": "Taichung",
+      "latitude": 24.13728,
+      "longitude": 120.68691,
+      "adjacentStationIds": [
+        "3290",
+        "3310"
+      ],
+      "challenge": {
+        "id": "C3300",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.13728,
+        "longitude": 120.68691
+      }
+    },
+    {
+      "id": "3310",
+      "name": "Wuquan",
+      "latitude": 24.12877,
+      "longitude": 120.66654,
+      "adjacentStationIds": [
+        "3300",
+        "3320"
+      ],
+      "challenge": {
+        "id": "C3310",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.12877,
+        "longitude": 120.66654
+      }
+    },
+    {
+      "id": "3320",
+      "name": "Daqing",
+      "latitude": 24.11911,
+      "longitude": 120.64795,
+      "adjacentStationIds": [
+        "3310",
+        "3330"
+      ],
+      "challenge": {
+        "id": "C3320",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.11911,
+        "longitude": 120.64795
+      }
+    },
+    {
+      "id": "3330",
+      "name": "Wuri",
+      "latitude": 24.10867,
+      "longitude": 120.62244,
+      "adjacentStationIds": [
+        "3320",
+        "3340"
+      ],
+      "challenge": {
+        "id": "C3330",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.10867,
+        "longitude": 120.62244
+      }
+    },
+    {
+      "id": "3340",
+      "name": "Xinwuri",
+      "latitude": 24.10937,
+      "longitude": 120.61421,
+      "adjacentStationIds": [
+        "3330",
+        "3350"
+      ],
+      "challenge": {
+        "id": "C3340",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.10937,
+        "longitude": 120.61421
+      }
+    },
+    {
+      "id": "3350",
+      "name": "Chenggong",
+      "latitude": 24.11424,
+      "longitude": 120.59021,
+      "adjacentStationIds": [
+        "2260",
+        "3340",
+        "3360"
+      ],
+      "challenge": {
+        "id": "C3350",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.11424,
+        "longitude": 120.59021
+      }
+    },
+    {
+      "id": "3360",
+      "name": "Changhua",
+      "latitude": 24.08177,
+      "longitude": 120.53854,
+      "adjacentStationIds": [
+        "2260",
+        "3350",
+        "3370"
+      ],
+      "challenge": {
+        "id": "C3360",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.08177,
+        "longitude": 120.53854
+      }
+    },
+    {
+      "id": "3370",
+      "name": "Huatan",
+      "latitude": 24.02502,
+      "longitude": 120.53742,
+      "adjacentStationIds": [
+        "3360",
+        "3380"
+      ],
+      "challenge": {
+        "id": "C3370",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.02502,
+        "longitude": 120.53742
+      }
+    },
+    {
+      "id": "3380",
+      "name": "Dacun",
+      "latitude": 23.99003,
+      "longitude": 120.56068,
+      "adjacentStationIds": [
+        "3370",
+        "3390"
+      ],
+      "challenge": {
+        "id": "C3380",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.99003,
+        "longitude": 120.56068
+      }
+    },
+    {
+      "id": "3390",
+      "name": "Yuanlin",
+      "latitude": 23.95947,
+      "longitude": 120.56977,
+      "adjacentStationIds": [
+        "3380",
+        "3400"
+      ],
+      "challenge": {
+        "id": "C3390",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.95947,
+        "longitude": 120.56977
+      }
+    },
+    {
+      "id": "3400",
+      "name": "Yongjing",
+      "latitude": 23.92817,
+      "longitude": 120.57167,
+      "adjacentStationIds": [
+        "3390",
+        "3410"
+      ],
+      "challenge": {
+        "id": "C3400",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.92817,
+        "longitude": 120.57167
+      }
+    },
+    {
+      "id": "3410",
+      "name": "Shetou",
+      "latitude": 23.89573,
+      "longitude": 120.58077,
+      "adjacentStationIds": [
+        "3400",
+        "3420"
+      ],
+      "challenge": {
+        "id": "C3410",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.89573,
+        "longitude": 120.58077
+      }
+    },
+    {
+      "id": "3420",
+      "name": "Tianzhong",
+      "latitude": 23.85826,
+      "longitude": 120.59123,
+      "adjacentStationIds": [
+        "3410",
+        "3430"
+      ],
+      "challenge": {
+        "id": "C3420",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.85826,
+        "longitude": 120.59123
+      }
+    },
+    {
+      "id": "3430",
+      "name": "Ershui",
+      "latitude": 23.81321,
+      "longitude": 120.61805,
+      "adjacentStationIds": [
+        "3420",
+        "3431",
+        "3450"
+      ],
+      "challenge": {
+        "id": "C3430",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.81321,
+        "longitude": 120.61805
+      }
+    },
+    {
+      "id": "3431",
+      "name": "Yuanquan",
+      "latitude": 23.79845,
+      "longitude": 120.64211,
+      "adjacentStationIds": [
+        "3430",
+        "3432"
+      ],
+      "challenge": {
+        "id": "C3431",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.79845,
+        "longitude": 120.64211
+      }
+    },
+    {
+      "id": "3432",
+      "name": "Zhuoshui",
+      "latitude": 23.83467,
+      "longitude": 120.70467,
+      "adjacentStationIds": [
+        "3431",
+        "3433"
+      ],
+      "challenge": {
+        "id": "C3432",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.83467,
+        "longitude": 120.70467
+      }
+    },
+    {
+      "id": "3433",
+      "name": "Longquan",
+      "latitude": 23.83521,
+      "longitude": 120.75014,
+      "adjacentStationIds": [
+        "3432",
+        "3434"
+      ],
+      "challenge": {
+        "id": "C3433",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.83521,
+        "longitude": 120.75014
+      }
+    },
+    {
+      "id": "3434",
+      "name": "Jiji",
+      "latitude": 23.82647,
+      "longitude": 120.78495,
+      "adjacentStationIds": [
+        "3433",
+        "3435"
+      ],
+      "challenge": {
+        "id": "C3434",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.82647,
+        "longitude": 120.78495
+      }
+    },
+    {
+      "id": "3435",
+      "name": "Shuili",
+      "latitude": 23.81845,
+      "longitude": 120.85332,
+      "adjacentStationIds": [
+        "3434",
+        "3436"
+      ],
+      "challenge": {
+        "id": "C3435",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.81845,
+        "longitude": 120.85332
+      }
+    },
+    {
+      "id": "3436",
+      "name": "Checheng",
+      "latitude": 23.83263,
+      "longitude": 120.86572,
+      "adjacentStationIds": [
+        "3435"
+      ],
+      "challenge": {
+        "id": "C3436",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.83263,
+        "longitude": 120.86572
+      }
+    },
+    {
+      "id": "3450",
+      "name": "Linnei",
+      "latitude": 23.75967,
+      "longitude": 120.61499,
+      "adjacentStationIds": [
+        "3430",
+        "3460"
+      ],
+      "challenge": {
+        "id": "C3450",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.75967,
+        "longitude": 120.61499
+      }
+    },
+    {
+      "id": "3460",
+      "name": "Shiliu",
+      "latitude": 23.73167,
+      "longitude": 120.57998,
+      "adjacentStationIds": [
+        "3450",
+        "3470"
+      ],
+      "challenge": {
+        "id": "C3460",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.73167,
+        "longitude": 120.57998
+      }
+    },
+    {
+      "id": "3470",
+      "name": "Douliu",
+      "latitude": 23.71157,
+      "longitude": 120.54117,
+      "adjacentStationIds": [
+        "3460",
+        "3480"
+      ],
+      "challenge": {
+        "id": "C3470",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.71157,
+        "longitude": 120.54117
+      }
+    },
+    {
+      "id": "3480",
+      "name": "Dounan",
+      "latitude": 23.67265,
+      "longitude": 120.48056,
+      "adjacentStationIds": [
+        "3470",
+        "3490"
+      ],
+      "challenge": {
+        "id": "C3480",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.67265,
+        "longitude": 120.48056
+      }
+    },
+    {
+      "id": "3490",
+      "name": "Shigui",
+      "latitude": 23.63951,
+      "longitude": 120.47106,
+      "adjacentStationIds": [
+        "3480",
+        "4050"
+      ],
+      "challenge": {
+        "id": "C3490",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.63951,
+        "longitude": 120.47106
+      }
+    },
+    {
+      "id": "4050",
+      "name": "Dalin",
+      "latitude": 23.60112,
+      "longitude": 120.45585,
+      "adjacentStationIds": [
+        "3490",
+        "4060"
+      ],
+      "challenge": {
+        "id": "C4050",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.60112,
+        "longitude": 120.45585
+      }
+    },
+    {
+      "id": "4060",
+      "name": "Minxiong",
+      "latitude": 23.55519,
+      "longitude": 120.43139,
+      "adjacentStationIds": [
+        "4050",
+        "4070"
+      ],
+      "challenge": {
+        "id": "C4060",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.55519,
+        "longitude": 120.43139
+      }
+    },
+    {
+      "id": "4070",
+      "name": "Jiabei",
+      "latitude": 23.49981,
+      "longitude": 120.44851,
+      "adjacentStationIds": [
+        "4060",
+        "4080"
+      ],
+      "challenge": {
+        "id": "C4070",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.49981,
+        "longitude": 120.44851
+      }
+    },
+    {
+      "id": "4080",
+      "name": "Chiayi",
+      "latitude": 23.47902,
+      "longitude": 120.44124,
+      "adjacentStationIds": [
+        "4070",
+        "4090"
+      ],
+      "challenge": {
+        "id": "C4080",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.47902,
+        "longitude": 120.44124
+      }
+    },
+    {
+      "id": "4090",
+      "name": "Shuishang",
+      "latitude": 23.43398,
+      "longitude": 120.39971,
+      "adjacentStationIds": [
+        "4080",
+        "4100"
+      ],
+      "challenge": {
+        "id": "C4090",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.43398,
+        "longitude": 120.39971
+      }
+    },
+    {
+      "id": "4100",
+      "name": "Nanjing",
+      "latitude": 23.41344,
+      "longitude": 120.38654,
+      "adjacentStationIds": [
+        "4090",
+        "4110"
+      ],
+      "challenge": {
+        "id": "C4100",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.41344,
+        "longitude": 120.38654
+      }
+    },
+    {
+      "id": "4110",
+      "name": "Houbi",
+      "latitude": 23.36626,
+      "longitude": 120.36058,
+      "adjacentStationIds": [
+        "4100",
+        "4120"
+      ],
+      "challenge": {
+        "id": "C4110",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.36626,
+        "longitude": 120.36058
+      }
+    },
+    {
+      "id": "4120",
+      "name": "Xinying",
+      "latitude": 23.30673,
+      "longitude": 120.32307,
+      "adjacentStationIds": [
+        "4110",
+        "4130"
+      ],
+      "challenge": {
+        "id": "C4120",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.30673,
+        "longitude": 120.32307
+      }
+    },
+    {
+      "id": "4130",
+      "name": "Liuying",
+      "latitude": 23.27762,
+      "longitude": 120.32252,
+      "adjacentStationIds": [
+        "4120",
+        "4140"
+      ],
+      "challenge": {
+        "id": "C4130",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.27762,
+        "longitude": 120.32252
+      }
+    },
+    {
+      "id": "4140",
+      "name": "Linfengying",
+      "latitude": 23.24259,
+      "longitude": 120.32107,
+      "adjacentStationIds": [
+        "4130",
+        "4150"
+      ],
+      "challenge": {
+        "id": "C4140",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.24259,
+        "longitude": 120.32107
+      }
+    },
+    {
+      "id": "4150",
+      "name": "Longtian",
+      "latitude": 23.19271,
+      "longitude": 120.31917,
+      "adjacentStationIds": [
+        "4140",
+        "4160"
+      ],
+      "challenge": {
+        "id": "C4150",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.19271,
+        "longitude": 120.31917
+      }
+    },
+    {
+      "id": "4160",
+      "name": "Balin",
+      "latitude": 23.17287,
+      "longitude": 120.32117,
+      "adjacentStationIds": [
+        "4150",
+        "4170"
+      ],
+      "challenge": {
+        "id": "C4160",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.17287,
+        "longitude": 120.32117
+      }
+    },
+    {
+      "id": "4170",
+      "name": "Shanhua",
+      "latitude": 23.13333,
+      "longitude": 120.30653,
+      "adjacentStationIds": [
+        "4160",
+        "4180"
+      ],
+      "challenge": {
+        "id": "C4170",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.13333,
+        "longitude": 120.30653
+      }
+    },
+    {
+      "id": "4180",
+      "name": "Nanke",
+      "latitude": 23.10727,
+      "longitude": 120.30192,
+      "adjacentStationIds": [
+        "4170",
+        "4190"
+      ],
+      "challenge": {
+        "id": "C4180",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.10727,
+        "longitude": 120.30192
+      }
+    },
+    {
+      "id": "4190",
+      "name": "Xinshi",
+      "latitude": 23.06823,
+      "longitude": 120.29004,
+      "adjacentStationIds": [
+        "4180",
+        "4200"
+      ],
+      "challenge": {
+        "id": "C4190",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.06823,
+        "longitude": 120.29004
+      }
+    },
+    {
+      "id": "4200",
+      "name": "Yongkang",
+      "latitude": 23.03825,
+      "longitude": 120.25347,
+      "adjacentStationIds": [
+        "4190",
+        "4210"
+      ],
+      "challenge": {
+        "id": "C4200",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.03825,
+        "longitude": 120.25347
+      }
+    },
+    {
+      "id": "4210",
+      "name": "Daqiao",
+      "latitude": 23.01923,
+      "longitude": 120.22429,
+      "adjacentStationIds": [
+        "4200",
+        "4220"
+      ],
+      "challenge": {
+        "id": "C4210",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.01923,
+        "longitude": 120.22429
+      }
+    },
+    {
+      "id": "4220",
+      "name": "Tainan",
+      "latitude": 22.99719,
+      "longitude": 120.21249,
+      "adjacentStationIds": [
+        "4210",
+        "4250"
+      ],
+      "challenge": {
+        "id": "C4220",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.99719,
+        "longitude": 120.21249
+      }
+    },
+    {
+      "id": "4250",
+      "name": "Bao'an",
+      "latitude": 22.93296,
+      "longitude": 120.23158,
+      "adjacentStationIds": [
+        "4220",
+        "4260"
+      ],
+      "challenge": {
+        "id": "C4250",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.93296,
+        "longitude": 120.23158
+      }
+    },
+    {
+      "id": "4260",
+      "name": "Rende",
+      "latitude": 22.92354,
+      "longitude": 120.24054,
+      "adjacentStationIds": [
+        "4250",
+        "4270"
+      ],
+      "challenge": {
+        "id": "C4260",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.92354,
+        "longitude": 120.24054
+      }
+    },
+    {
+      "id": "4270",
+      "name": "Zhongzhou",
+      "latitude": 22.90446,
+      "longitude": 120.25284,
+      "adjacentStationIds": [
+        "4260",
+        "4271",
+        "4290"
+      ],
+      "challenge": {
+        "id": "C4270",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.90446,
+        "longitude": 120.25284
+      }
+    },
+    {
+      "id": "4271",
+      "name": "Chang Jung Christian University",
+      "latitude": 22.90729,
+      "longitude": 120.27263,
+      "adjacentStationIds": [
+        "4270",
+        "4272"
+      ],
+      "challenge": {
+        "id": "C4271",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.90729,
+        "longitude": 120.27263
+      }
+    },
+    {
+      "id": "4272",
+      "name": "Shalun",
+      "latitude": 22.92407,
+      "longitude": 120.28622,
+      "adjacentStationIds": [
+        "4271"
+      ],
+      "challenge": {
+        "id": "C4272",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.92407,
+        "longitude": 120.28622
+      }
+    },
+    {
+      "id": "4290",
+      "name": "Dahu",
+      "latitude": 22.87821,
+      "longitude": 120.25384,
+      "adjacentStationIds": [
+        "4270",
+        "4300"
+      ],
+      "challenge": {
+        "id": "C4290",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.87821,
+        "longitude": 120.25384
+      }
+    },
+    {
+      "id": "4300",
+      "name": "Luzhu",
+      "latitude": 22.85404,
+      "longitude": 120.26619,
+      "adjacentStationIds": [
+        "4290",
+        "4310"
+      ],
+      "challenge": {
+        "id": "C4300",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.85404,
+        "longitude": 120.26619
+      }
+    },
+    {
+      "id": "4310",
+      "name": "Gangshan",
+      "latitude": 22.79223,
+      "longitude": 120.30004,
+      "adjacentStationIds": [
+        "4300",
+        "4320"
+      ],
+      "challenge": {
+        "id": "C4310",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.79223,
+        "longitude": 120.30004
+      }
+    },
+    {
+      "id": "4320",
+      "name": "Qiaotou",
+      "latitude": 22.76098,
+      "longitude": 120.31011,
+      "adjacentStationIds": [
+        "4310",
+        "4330"
+      ],
+      "challenge": {
+        "id": "C4320",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.76098,
+        "longitude": 120.31011
+      }
+    },
+    {
+      "id": "4330",
+      "name": "Nanzi",
+      "latitude": 22.72696,
+      "longitude": 120.32425,
+      "adjacentStationIds": [
+        "4320",
+        "4340"
+      ],
+      "challenge": {
+        "id": "C4330",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.72696,
+        "longitude": 120.32425
+      }
+    },
+    {
+      "id": "4340",
+      "name": "Xinzuoying",
+      "latitude": 22.68754,
+      "longitude": 120.30678,
+      "adjacentStationIds": [
+        "4330",
+        "4350"
+      ],
+      "challenge": {
+        "id": "C4340",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.68754,
+        "longitude": 120.30678
+      }
+    },
+    {
+      "id": "4350",
+      "name": "Zuoying",
+      "latitude": 22.67445,
+      "longitude": 120.29401,
+      "adjacentStationIds": [
+        "4340",
+        "4360"
+      ],
+      "challenge": {
+        "id": "C4350",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.67445,
+        "longitude": 120.29401
+      }
+    },
+    {
+      "id": "4360",
+      "name": "Neiwei",
+      "latitude": 22.66589,
+      "longitude": 120.28701,
+      "adjacentStationIds": [
+        "4350",
+        "4370"
+      ],
+      "challenge": {
+        "id": "C4360",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.66589,
+        "longitude": 120.28701
+      }
+    },
+    {
+      "id": "4370",
+      "name": "Museum of Fine Arts",
+      "latitude": 22.65185,
+      "longitude": 120.28148,
+      "adjacentStationIds": [
+        "4360",
+        "4380"
+      ],
+      "challenge": {
+        "id": "C4370",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.65185,
+        "longitude": 120.28148
+      }
+    },
+    {
+      "id": "4380",
+      "name": "Gushan",
+      "latitude": 22.64181,
+      "longitude": 120.28071,
+      "adjacentStationIds": [
+        "4370",
+        "4390"
+      ],
+      "challenge": {
+        "id": "C4380",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.64181,
+        "longitude": 120.28071
+      }
+    },
+    {
+      "id": "4390",
+      "name": "Sankuaicuo",
+      "latitude": 22.63931,
+      "longitude": 120.29414,
+      "adjacentStationIds": [
+        "4380",
+        "4400"
+      ],
+      "challenge": {
+        "id": "C4390",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.63931,
+        "longitude": 120.29414
+      }
+    },
+    {
+      "id": "4400",
+      "name": "Kaohsiung",
+      "latitude": 22.63946,
+      "longitude": 120.30292,
+      "adjacentStationIds": [
+        "4390",
+        "4410"
+      ],
+      "challenge": {
+        "id": "C4400",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.63946,
+        "longitude": 120.30292
+      }
+    },
+    {
+      "id": "4410",
+      "name": "Minzu",
+      "latitude": 22.63879,
+      "longitude": 120.31494,
+      "adjacentStationIds": [
+        "4400",
+        "4420"
+      ],
+      "challenge": {
+        "id": "C4410",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.63879,
+        "longitude": 120.31494
+      }
+    },
+    {
+      "id": "4420",
+      "name": "Science And Technology Museum",
+      "latitude": 22.63709,
+      "longitude": 120.32603,
+      "adjacentStationIds": [
+        "4410",
+        "4430"
+      ],
+      "challenge": {
+        "id": "C4420",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.63709,
+        "longitude": 120.32603
+      }
+    },
+    {
+      "id": "4430",
+      "name": "Zhengyi",
+      "latitude": 22.63425,
+      "longitude": 120.34245,
+      "adjacentStationIds": [
+        "4420",
+        "4440"
+      ],
+      "challenge": {
+        "id": "C4430",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.63425,
+        "longitude": 120.34245
+      }
+    },
+    {
+      "id": "4440",
+      "name": "Fongshan",
+      "latitude": 22.63145,
+      "longitude": 120.35745,
+      "adjacentStationIds": [
+        "4430",
+        "4450"
+      ],
+      "challenge": {
+        "id": "C4440",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.63145,
+        "longitude": 120.35745
+      }
+    },
+    {
+      "id": "4450",
+      "name": "Houzhuang",
+      "latitude": 22.64016,
+      "longitude": 120.39131,
+      "adjacentStationIds": [
+        "4440",
+        "4460"
+      ],
+      "challenge": {
+        "id": "C4450",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.64016,
+        "longitude": 120.39131
+      }
+    },
+    {
+      "id": "4460",
+      "name": "Jiuqutang",
+      "latitude": 22.65641,
+      "longitude": 120.42089,
+      "adjacentStationIds": [
+        "4450",
+        "4470"
+      ],
+      "challenge": {
+        "id": "C4460",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.65641,
+        "longitude": 120.42089
+      }
+    },
+    {
+      "id": "4470",
+      "name": "Liukuaicuo",
+      "latitude": 22.66597,
+      "longitude": 120.46497,
+      "adjacentStationIds": [
+        "4460",
+        "5000"
+      ],
+      "challenge": {
+        "id": "C4470",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.66597,
+        "longitude": 120.46497
+      }
+    },
+    {
+      "id": "5000",
+      "name": "Pingtung",
+      "latitude": 22.66905,
+      "longitude": 120.48617,
+      "adjacentStationIds": [
+        "4470",
+        "5010"
+      ],
+      "challenge": {
+        "id": "C5000",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.66905,
+        "longitude": 120.48617
+      }
+    },
+    {
+      "id": "5010",
+      "name": "Guilai",
+      "latitude": 22.65246,
+      "longitude": 120.50263,
+      "adjacentStationIds": [
+        "5000",
+        "5020"
+      ],
+      "challenge": {
+        "id": "C5010",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.65246,
+        "longitude": 120.50263
+      }
+    },
+    {
+      "id": "5020",
+      "name": "Linluo",
+      "latitude": 22.63481,
+      "longitude": 120.51432,
+      "adjacentStationIds": [
+        "5010",
+        "5030"
+      ],
+      "challenge": {
+        "id": "C5020",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.63481,
+        "longitude": 120.51432
+      }
+    },
+    {
+      "id": "5030",
+      "name": "Xishi",
+      "latitude": 22.61643,
+      "longitude": 120.52661,
+      "adjacentStationIds": [
+        "5020",
+        "5040"
+      ],
+      "challenge": {
+        "id": "C5030",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.61643,
+        "longitude": 120.52661
+      }
+    },
+    {
+      "id": "5040",
+      "name": "Zhutian",
+      "latitude": 22.58658,
+      "longitude": 120.53978,
+      "adjacentStationIds": [
+        "5030",
+        "5050"
+      ],
+      "challenge": {
+        "id": "C5040",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.58658,
+        "longitude": 120.53978
+      }
+    },
+    {
+      "id": "5050",
+      "name": "Chaozhou",
+      "latitude": 22.55008,
+      "longitude": 120.53631,
+      "adjacentStationIds": [
+        "5040",
+        "5060",
+        "5999"
+      ],
+      "challenge": {
+        "id": "C5050",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.55008,
+        "longitude": 120.53631
+      }
+    },
+    {
+      "id": "5060",
+      "name": "Kanding",
+      "latitude": 22.51311,
+      "longitude": 120.51481,
+      "adjacentStationIds": [
+        "5050",
+        "5070"
+      ],
+      "challenge": {
+        "id": "C5060",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.51311,
+        "longitude": 120.51481
+      }
+    },
+    {
+      "id": "5070",
+      "name": "Nanzhou",
+      "latitude": 22.49207,
+      "longitude": 120.51174,
+      "adjacentStationIds": [
+        "5060",
+        "5080"
+      ],
+      "challenge": {
+        "id": "C5070",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.49207,
+        "longitude": 120.51174
+      }
+    },
+    {
+      "id": "5080",
+      "name": "Zhen'an",
+      "latitude": 22.45794,
+      "longitude": 120.51129,
+      "adjacentStationIds": [
+        "5070",
+        "5090"
+      ],
+      "challenge": {
+        "id": "C5080",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.45794,
+        "longitude": 120.51129
+      }
+    },
+    {
+      "id": "5090",
+      "name": "Linbian",
+      "latitude": 22.43144,
+      "longitude": 120.51535,
+      "adjacentStationIds": [
+        "5080",
+        "5100"
+      ],
+      "challenge": {
+        "id": "C5090",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.43144,
+        "longitude": 120.51535
+      }
+    },
+    {
+      "id": "5100",
+      "name": "Jiadong",
+      "latitude": 22.41409,
+      "longitude": 120.54774,
+      "adjacentStationIds": [
+        "5090",
+        "5110"
+      ],
+      "challenge": {
+        "id": "C5100",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.41409,
+        "longitude": 120.54774
+      }
+    },
+    {
+      "id": "5110",
+      "name": "Donghai",
+      "latitude": 22.39897,
+      "longitude": 120.57236,
+      "adjacentStationIds": [
+        "5100",
+        "5120"
+      ],
+      "challenge": {
+        "id": "C5110",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.39897,
+        "longitude": 120.57236
+      }
+    },
+    {
+      "id": "5120",
+      "name": "Fangliao",
+      "latitude": 22.36802,
+      "longitude": 120.59511,
+      "adjacentStationIds": [
+        "5110",
+        "5130"
+      ],
+      "challenge": {
+        "id": "C5120",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.36802,
+        "longitude": 120.59511
+      }
+    },
+    {
+      "id": "5130",
+      "name": "Jialu",
+      "latitude": 22.33085,
+      "longitude": 120.62445,
+      "adjacentStationIds": [
+        "5120",
+        "5140"
+      ],
+      "challenge": {
+        "id": "C5130",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.33085,
+        "longitude": 120.62445
+      }
+    },
+    {
+      "id": "5140",
+      "name": "Neishi",
+      "latitude": 22.30617,
+      "longitude": 120.64331,
+      "adjacentStationIds": [
+        "5130",
+        "5160"
+      ],
+      "challenge": {
+        "id": "C5140",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.30617,
+        "longitude": 120.64331
+      }
+    },
+    {
+      "id": "5160",
+      "name": "Fangshan",
+      "latitude": 22.26704,
+      "longitude": 120.65947,
+      "adjacentStationIds": [
+        "5140",
+        "5170"
+      ],
+      "challenge": {
+        "id": "C5160",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.26704,
+        "longitude": 120.65947
+      }
+    },
+    {
+      "id": "5170",
+      "name": "Fangye",
+      "latitude": 22.28091,
+      "longitude": 120.71709,
+      "adjacentStationIds": [
+        "5160",
+        "5190"
+      ],
+      "challenge": {
+        "id": "C5170",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.28091,
+        "longitude": 120.71709
+      }
+    },
+    {
+      "id": "5190",
+      "name": "Dawu",
+      "latitude": 22.36526,
+      "longitude": 120.90094,
+      "adjacentStationIds": [
+        "5170",
+        "5200"
+      ],
+      "challenge": {
+        "id": "C5190",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.36526,
+        "longitude": 120.90094
+      }
+    },
+    {
+      "id": "5200",
+      "name": "Longxi",
+      "latitude": 22.46102,
+      "longitude": 120.94176,
+      "adjacentStationIds": [
+        "5190",
+        "5210"
+      ],
+      "challenge": {
+        "id": "C5200",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.46102,
+        "longitude": 120.94176
+      }
+    },
+    {
+      "id": "5210",
+      "name": "Jinlun",
+      "latitude": 22.53161,
+      "longitude": 120.96721,
+      "adjacentStationIds": [
+        "5200",
+        "5220"
+      ],
+      "challenge": {
+        "id": "C5210",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.53161,
+        "longitude": 120.96721
+      }
+    },
+    {
+      "id": "5220",
+      "name": "Taimali",
+      "latitude": 22.61883,
+      "longitude": 121.00492,
+      "adjacentStationIds": [
+        "5210",
+        "5230"
+      ],
+      "challenge": {
+        "id": "C5220",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.61883,
+        "longitude": 121.00492
+      }
+    },
+    {
+      "id": "5230",
+      "name": "Zhiben",
+      "latitude": 22.71022,
+      "longitude": 121.06068,
+      "adjacentStationIds": [
+        "5220",
+        "5240"
+      ],
+      "challenge": {
+        "id": "C5230",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.71022,
+        "longitude": 121.06068
+      }
+    },
+    {
+      "id": "5240",
+      "name": "Kangle",
+      "latitude": 22.76426,
+      "longitude": 121.09356,
+      "adjacentStationIds": [
+        "5230",
+        "6000"
+      ],
+      "challenge": {
+        "id": "C5240",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.76426,
+        "longitude": 121.09356
+      }
+    },
+    {
+      "id": "5998",
+      "name": "South",
+      "latitude": 22.52755,
+      "longitude": 120.53658,
+      "adjacentStationIds": [
+        "5999"
+      ],
+      "challenge": {
+        "id": "C5998",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.52755,
+        "longitude": 120.53658
+      }
+    },
+    {
+      "id": "5999",
+      "name": "Chaozhou Railway Workshop",
+      "latitude": 22.52231,
+      "longitude": 120.52642,
+      "adjacentStationIds": [
+        "5050",
+        "5998"
+      ],
+      "challenge": {
+        "id": "C5999",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.52231,
+        "longitude": 120.52642
+      }
+    },
+    {
+      "id": "6000",
+      "name": "Taitung",
+      "latitude": 22.79372,
+      "longitude": 121.1231,
+      "adjacentStationIds": [
+        "5240",
+        "6010"
+      ],
+      "challenge": {
+        "id": "C6000",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.79372,
+        "longitude": 121.1231
+      }
+    },
+    {
+      "id": "6010",
+      "name": "Shanli",
+      "latitude": 22.86194,
+      "longitude": 121.13778,
+      "adjacentStationIds": [
+        "6000",
+        "6020"
+      ],
+      "challenge": {
+        "id": "C6010",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 22.86194,
+        "longitude": 121.13778
+      }
+    },
+    {
+      "id": "6020",
+      "name": "Luye",
+      "latitude": 22.91249,
+      "longitude": 121.13701,
+      "adjacentStationIds": [
+        "6010",
+        "6030"
+      ],
+      "challenge": {
+        "id": "C6020",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 22.91249,
+        "longitude": 121.13701
+      }
+    },
+    {
+      "id": "6030",
+      "name": "Ruiyuan",
+      "latitude": 22.95604,
+      "longitude": 121.15901,
+      "adjacentStationIds": [
+        "6020",
+        "6040"
+      ],
+      "challenge": {
+        "id": "C6030",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 22.95604,
+        "longitude": 121.15901
+      }
+    },
+    {
+      "id": "6040",
+      "name": "Ruihe",
+      "latitude": 22.97997,
+      "longitude": 121.15595,
+      "adjacentStationIds": [
+        "6030",
+        "6050"
+      ],
+      "challenge": {
+        "id": "C6040",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 22.97997,
+        "longitude": 121.15595
+      }
+    },
+    {
+      "id": "6050",
+      "name": "Guanshan",
+      "latitude": 23.04566,
+      "longitude": 121.1643,
+      "adjacentStationIds": [
+        "6040",
+        "6060"
+      ],
+      "challenge": {
+        "id": "C6050",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.04566,
+        "longitude": 121.1643
+      }
+    },
+    {
+      "id": "6060",
+      "name": "Haiduan",
+      "latitude": 23.10292,
+      "longitude": 121.17676,
+      "adjacentStationIds": [
+        "6050",
+        "6070"
+      ],
+      "challenge": {
+        "id": "C6060",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.10292,
+        "longitude": 121.17676
+      }
+    },
+    {
+      "id": "6070",
+      "name": "Chishang",
+      "latitude": 23.12613,
+      "longitude": 121.21949,
+      "adjacentStationIds": [
+        "6060",
+        "6080"
+      ],
+      "challenge": {
+        "id": "C6070",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.12613,
+        "longitude": 121.21949
+      }
+    },
+    {
+      "id": "6080",
+      "name": "Fuli",
+      "latitude": 23.17924,
+      "longitude": 121.24864,
+      "adjacentStationIds": [
+        "6070",
+        "6090"
+      ],
+      "challenge": {
+        "id": "C6080",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.17924,
+        "longitude": 121.24864
+      }
+    },
+    {
+      "id": "6090",
+      "name": "Dongzhu",
+      "latitude": 23.22605,
+      "longitude": 121.27842,
+      "adjacentStationIds": [
+        "6080",
+        "6100"
+      ],
+      "challenge": {
+        "id": "C6090",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.22605,
+        "longitude": 121.27842
+      }
+    },
+    {
+      "id": "6100",
+      "name": "Dongli",
+      "latitude": 23.27234,
+      "longitude": 121.30418,
+      "adjacentStationIds": [
+        "6090",
+        "6110"
+      ],
+      "challenge": {
+        "id": "C6100",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.27234,
+        "longitude": 121.30418
+      }
+    },
+    {
+      "id": "6110",
+      "name": "Yuli",
+      "latitude": 23.33155,
+      "longitude": 121.31172,
+      "adjacentStationIds": [
+        "6100",
+        "6120"
+      ],
+      "challenge": {
+        "id": "C6110",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.33155,
+        "longitude": 121.31172
+      }
+    },
+    {
+      "id": "6120",
+      "name": "Sanmin",
+      "latitude": 23.42458,
+      "longitude": 121.34539,
+      "adjacentStationIds": [
+        "6110",
+        "6130"
+      ],
+      "challenge": {
+        "id": "C6120",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.42458,
+        "longitude": 121.34539
+      }
+    },
+    {
+      "id": "6130",
+      "name": "Ruisui",
+      "latitude": 23.49749,
+      "longitude": 121.37683,
+      "adjacentStationIds": [
+        "6120",
+        "6140"
+      ],
+      "challenge": {
+        "id": "C6130",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.49749,
+        "longitude": 121.37683
+      }
+    },
+    {
+      "id": "6140",
+      "name": "Fuyuan",
+      "latitude": 23.58031,
+      "longitude": 121.38008,
+      "adjacentStationIds": [
+        "6130",
+        "6150"
+      ],
+      "challenge": {
+        "id": "C6140",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.58031,
+        "longitude": 121.38008
+      }
+    },
+    {
+      "id": "6150",
+      "name": "Dafu",
+      "latitude": 23.60571,
+      "longitude": 121.38963,
+      "adjacentStationIds": [
+        "6140",
+        "6160"
+      ],
+      "challenge": {
+        "id": "C6150",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.60571,
+        "longitude": 121.38963
+      }
+    },
+    {
+      "id": "6160",
+      "name": "Guangfu",
+      "latitude": 23.66631,
+      "longitude": 121.42117,
+      "adjacentStationIds": [
+        "6150",
+        "6170"
+      ],
+      "challenge": {
+        "id": "C6160",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.66631,
+        "longitude": 121.42117
+      }
+    },
+    {
+      "id": "6170",
+      "name": "Wanrong",
+      "latitude": 23.71199,
+      "longitude": 121.41907,
+      "adjacentStationIds": [
+        "6160",
+        "6180"
+      ],
+      "challenge": {
+        "id": "C6170",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.71199,
+        "longitude": 121.41907
+      }
+    },
+    {
+      "id": "6180",
+      "name": "Fenglin",
+      "latitude": 23.74634,
+      "longitude": 121.44701,
+      "adjacentStationIds": [
+        "6170",
+        "6190"
+      ],
+      "challenge": {
+        "id": "C6180",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.74634,
+        "longitude": 121.44701
+      }
+    },
+    {
+      "id": "6190",
+      "name": "Nanping",
+      "latitude": 23.78231,
+      "longitude": 121.45824,
+      "adjacentStationIds": [
+        "6180",
+        "6200"
+      ],
+      "challenge": {
+        "id": "C6190",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.78231,
+        "longitude": 121.45824
+      }
+    },
+    {
+      "id": "6200",
+      "name": "Linrong Shin Kong",
+      "latitude": 23.80176,
+      "longitude": 121.46169,
+      "adjacentStationIds": [
+        "6190",
+        "6210"
+      ],
+      "challenge": {
+        "id": "C6200",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.80176,
+        "longitude": 121.46169
+      }
+    },
+    {
+      "id": "6210",
+      "name": "Fengtian",
+      "latitude": 23.84842,
+      "longitude": 121.49618,
+      "adjacentStationIds": [
+        "6200",
+        "6220"
+      ],
+      "challenge": {
+        "id": "C6210",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.84842,
+        "longitude": 121.49618
+      }
+    },
+    {
+      "id": "6220",
+      "name": "Shoufeng",
+      "latitude": 23.86901,
+      "longitude": 121.51064,
+      "adjacentStationIds": [
+        "6210",
+        "6230"
+      ],
+      "challenge": {
+        "id": "C6220",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.86901,
+        "longitude": 121.51064
+      }
+    },
+    {
+      "id": "6230",
+      "name": "Pinghe",
+      "latitude": 23.88279,
+      "longitude": 121.52045,
+      "adjacentStationIds": [
+        "6220",
+        "6240"
+      ],
+      "challenge": {
+        "id": "C6230",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 23.88279,
+        "longitude": 121.52045
+      }
+    },
+    {
+      "id": "6240",
+      "name": "Zhixue",
+      "latitude": 23.90769,
+      "longitude": 121.5295,
+      "adjacentStationIds": [
+        "6230",
+        "6250"
+      ],
+      "challenge": {
+        "id": "C6240",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 23.90769,
+        "longitude": 121.5295
+      }
+    },
+    {
+      "id": "6250",
+      "name": "Ji'an",
+      "latitude": 23.96823,
+      "longitude": 121.58266,
+      "adjacentStationIds": [
+        "6240",
+        "7000"
+      ],
+      "challenge": {
+        "id": "C6250",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 23.96823,
+        "longitude": 121.58266
+      }
+    },
+    {
+      "id": "7000",
+      "name": "Hualien",
+      "latitude": 23.99264,
+      "longitude": 121.60158,
+      "adjacentStationIds": [
+        "6250",
+        "7010"
+      ],
+      "challenge": {
+        "id": "C7000",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 23.99264,
+        "longitude": 121.60158
+      }
+    },
+    {
+      "id": "7010",
+      "name": "Beipu",
+      "latitude": 24.03253,
+      "longitude": 121.60166,
+      "adjacentStationIds": [
+        "7000",
+        "7020"
+      ],
+      "challenge": {
+        "id": "C7010",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.03253,
+        "longitude": 121.60166
+      }
+    },
+    {
+      "id": "7020",
+      "name": "Jingmei",
+      "latitude": 24.09038,
+      "longitude": 121.61099,
+      "adjacentStationIds": [
+        "7010",
+        "7030"
+      ],
+      "challenge": {
+        "id": "C7020",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.09038,
+        "longitude": 121.61099
+      }
+    },
+    {
+      "id": "7030",
+      "name": "Xincheng",
+      "latitude": 24.12756,
+      "longitude": 121.64086,
+      "adjacentStationIds": [
+        "7020",
+        "7040"
+      ],
+      "challenge": {
+        "id": "C7030",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.12756,
+        "longitude": 121.64086
+      }
+    },
+    {
+      "id": "7040",
+      "name": "Chongde",
+      "latitude": 24.17199,
+      "longitude": 121.65536,
+      "adjacentStationIds": [
+        "7030",
+        "7050"
+      ],
+      "challenge": {
+        "id": "C7040",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.17199,
+        "longitude": 121.65536
+      }
+    },
+    {
+      "id": "7050",
+      "name": "Heren",
+      "latitude": 24.24225,
+      "longitude": 121.71182,
+      "adjacentStationIds": [
+        "7040",
+        "7060"
+      ],
+      "challenge": {
+        "id": "C7050",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.24225,
+        "longitude": 121.71182
+      }
+    },
+    {
+      "id": "7060",
+      "name": "Heping",
+      "latitude": 24.29839,
+      "longitude": 121.75344,
+      "adjacentStationIds": [
+        "7050",
+        "7070"
+      ],
+      "challenge": {
+        "id": "C7060",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.29839,
+        "longitude": 121.75344
+      }
+    },
+    {
+      "id": "7070",
+      "name": "Hanben",
+      "latitude": 24.33543,
+      "longitude": 121.76838,
+      "adjacentStationIds": [
+        "7060",
+        "7080"
+      ],
+      "challenge": {
+        "id": "C7070",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.33543,
+        "longitude": 121.76838
+      }
+    },
+    {
+      "id": "7080",
+      "name": "Wuta",
+      "latitude": 24.44879,
+      "longitude": 121.77601,
+      "adjacentStationIds": [
+        "7070",
+        "7090"
+      ],
+      "challenge": {
+        "id": "C7080",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.44879,
+        "longitude": 121.77601
+      }
+    },
+    {
+      "id": "7090",
+      "name": "Nan'ao",
+      "latitude": 24.46342,
+      "longitude": 121.80103,
+      "adjacentStationIds": [
+        "7080",
+        "7100"
+      ],
+      "challenge": {
+        "id": "C7090",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.46342,
+        "longitude": 121.80103
+      }
+    },
+    {
+      "id": "7100",
+      "name": "Dong'ao",
+      "latitude": 24.51827,
+      "longitude": 121.83072,
+      "adjacentStationIds": [
+        "7090",
+        "7110"
+      ],
+      "challenge": {
+        "id": "C7100",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.51827,
+        "longitude": 121.83072
+      }
+    },
+    {
+      "id": "7110",
+      "name": "Yongle",
+      "latitude": 24.56843,
+      "longitude": 121.84458,
+      "adjacentStationIds": [
+        "7100",
+        "7130"
+      ],
+      "challenge": {
+        "id": "C7110",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.56843,
+        "longitude": 121.84458
+      }
+    },
+    {
+      "id": "7120",
+      "name": "Su'ao",
+      "latitude": 24.59516,
+      "longitude": 121.85143,
+      "adjacentStationIds": [
+        "7130"
+      ],
+      "challenge": {
+        "id": "C7120",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.59516,
+        "longitude": 121.85143
+      }
+    },
+    {
+      "id": "7130",
+      "name": "Su'aoxin",
+      "latitude": 24.60852,
+      "longitude": 121.82735,
+      "adjacentStationIds": [
+        "7110",
+        "7120",
+        "7140"
+      ],
+      "challenge": {
+        "id": "C7130",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.60852,
+        "longitude": 121.82735
+      }
+    },
+    {
+      "id": "7140",
+      "name": "Xinma",
+      "latitude": 24.61535,
+      "longitude": 121.82292,
+      "adjacentStationIds": [
+        "7130",
+        "7150"
+      ],
+      "challenge": {
+        "id": "C7140",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.61535,
+        "longitude": 121.82292
+      }
+    },
+    {
+      "id": "7150",
+      "name": "Dongshan",
+      "latitude": 24.63633,
+      "longitude": 121.79211,
+      "adjacentStationIds": [
+        "7140",
+        "7160"
+      ],
+      "challenge": {
+        "id": "C7150",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.63633,
+        "longitude": 121.79211
+      }
+    },
+    {
+      "id": "7160",
+      "name": "Luodong",
+      "latitude": 24.67795,
+      "longitude": 121.77424,
+      "adjacentStationIds": [
+        "7150",
+        "7170"
+      ],
+      "challenge": {
+        "id": "C7160",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.67795,
+        "longitude": 121.77424
+      }
+    },
+    {
+      "id": "7170",
+      "name": "Zhongli Yilan",
+      "latitude": 24.69415,
+      "longitude": 121.77526,
+      "adjacentStationIds": [
+        "7160",
+        "7180"
+      ],
+      "challenge": {
+        "id": "C7170",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.69415,
+        "longitude": 121.77526
+      }
+    },
+    {
+      "id": "7180",
+      "name": "Erjie",
+      "latitude": 24.70528,
+      "longitude": 121.77409,
+      "adjacentStationIds": [
+        "7170",
+        "7190"
+      ],
+      "challenge": {
+        "id": "C7180",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.70528,
+        "longitude": 121.77409
+      }
+    },
+    {
+      "id": "7190",
+      "name": "Yilan",
+      "latitude": 24.75462,
+      "longitude": 121.75791,
+      "adjacentStationIds": [
+        "7180",
+        "7200"
+      ],
+      "challenge": {
+        "id": "C7190",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.75462,
+        "longitude": 121.75791
+      }
+    },
+    {
+      "id": "7200",
+      "name": "Sicheng",
+      "latitude": 24.78681,
+      "longitude": 121.76271,
+      "adjacentStationIds": [
+        "7190",
+        "7210"
+      ],
+      "challenge": {
+        "id": "C7200",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.78681,
+        "longitude": 121.76271
+      }
+    },
+    {
+      "id": "7210",
+      "name": "Jiaoxi",
+      "latitude": 24.82703,
+      "longitude": 121.77535,
+      "adjacentStationIds": [
+        "7200",
+        "7220"
+      ],
+      "challenge": {
+        "id": "C7210",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.82703,
+        "longitude": 121.77535
+      }
+    },
+    {
+      "id": "7220",
+      "name": "Dingpu",
+      "latitude": 24.84391,
+      "longitude": 121.80913,
+      "adjacentStationIds": [
+        "7210",
+        "7230"
+      ],
+      "challenge": {
+        "id": "C7220",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.84391,
+        "longitude": 121.80913
+      }
+    },
+    {
+      "id": "7230",
+      "name": "Toucheng",
+      "latitude": 24.85898,
+      "longitude": 121.82258,
+      "adjacentStationIds": [
+        "7220",
+        "7240"
+      ],
+      "challenge": {
+        "id": "C7230",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.85898,
+        "longitude": 121.82258
+      }
+    },
+    {
+      "id": "7240",
+      "name": "Wai'ao",
+      "latitude": 24.88375,
+      "longitude": 121.84572,
+      "adjacentStationIds": [
+        "7230",
+        "7250"
+      ],
+      "challenge": {
+        "id": "C7240",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.88375,
+        "longitude": 121.84572
+      }
+    },
+    {
+      "id": "7250",
+      "name": "Guishan",
+      "latitude": 24.90484,
+      "longitude": 121.8689,
+      "adjacentStationIds": [
+        "7240",
+        "7260"
+      ],
+      "challenge": {
+        "id": "C7250",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 24.90484,
+        "longitude": 121.8689
+      }
+    },
+    {
+      "id": "7260",
+      "name": "Daxi",
+      "latitude": 24.93836,
+      "longitude": 121.88983,
+      "adjacentStationIds": [
+        "7250",
+        "7270"
+      ],
+      "challenge": {
+        "id": "C7260",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 24.93836,
+        "longitude": 121.88983
+      }
+    },
+    {
+      "id": "7270",
+      "name": "Dali",
+      "latitude": 24.96677,
+      "longitude": 121.92253,
+      "adjacentStationIds": [
+        "7260",
+        "7280"
+      ],
+      "challenge": {
+        "id": "C7270",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 24.96677,
+        "longitude": 121.92253
+      }
+    },
+    {
+      "id": "7280",
+      "name": "Shicheng",
+      "latitude": 24.97832,
+      "longitude": 121.94507,
+      "adjacentStationIds": [
+        "7270",
+        "7290"
+      ],
+      "challenge": {
+        "id": "C7280",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 24.97832,
+        "longitude": 121.94507
+      }
+    },
+    {
+      "id": "7290",
+      "name": "Fulong",
+      "latitude": 25.01595,
+      "longitude": 121.94471,
+      "adjacentStationIds": [
+        "7280",
+        "7300"
+      ],
+      "challenge": {
+        "id": "C7290",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.01595,
+        "longitude": 121.94471
+      }
+    },
+    {
+      "id": "7300",
+      "name": "Gongliao",
+      "latitude": 25.02197,
+      "longitude": 121.90879,
+      "adjacentStationIds": [
+        "7290",
+        "7310"
+      ],
+      "challenge": {
+        "id": "C7300",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 25.02197,
+        "longitude": 121.90879
+      }
+    },
+    {
+      "id": "7310",
+      "name": "Shuangxi",
+      "latitude": 25.03851,
+      "longitude": 121.86654,
+      "adjacentStationIds": [
+        "7300",
+        "7320"
+      ],
+      "challenge": {
+        "id": "C7310",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 25.03851,
+        "longitude": 121.86654
+      }
+    },
+    {
+      "id": "7320",
+      "name": "Mudan",
+      "latitude": 25.05871,
+      "longitude": 121.85197,
+      "adjacentStationIds": [
+        "7310",
+        "7330"
+      ],
+      "challenge": {
+        "id": "C7320",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.05871,
+        "longitude": 121.85197
+      }
+    },
+    {
+      "id": "7330",
+      "name": "Sandiaoling",
+      "latitude": 25.06555,
+      "longitude": 121.82257,
+      "adjacentStationIds": [
+        "7320",
+        "7331",
+        "7350"
+      ],
+      "challenge": {
+        "id": "C7330",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.06555,
+        "longitude": 121.82257
+      }
+    },
+    {
+      "id": "7331",
+      "name": "Dahua",
+      "latitude": 25.04998,
+      "longitude": 121.79732,
+      "adjacentStationIds": [
+        "7330",
+        "7332"
+      ],
+      "challenge": {
+        "id": "C7331",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 25.04998,
+        "longitude": 121.79732
+      }
+    },
+    {
+      "id": "7332",
+      "name": "Shifen",
+      "latitude": 25.04111,
+      "longitude": 121.77514,
+      "adjacentStationIds": [
+        "7331",
+        "7333"
+      ],
+      "challenge": {
+        "id": "C7332",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 25.04111,
+        "longitude": 121.77514
+      }
+    },
+    {
+      "id": "7333",
+      "name": "Wanggu",
+      "latitude": 25.03445,
+      "longitude": 121.76349,
+      "adjacentStationIds": [
+        "7332",
+        "7334"
+      ],
+      "challenge": {
+        "id": "C7333",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.03445,
+        "longitude": 121.76349
+      }
+    },
+    {
+      "id": "7334",
+      "name": "Lingjiao",
+      "latitude": 25.03016,
+      "longitude": 121.74795,
+      "adjacentStationIds": [
+        "7333",
+        "7335"
+      ],
+      "challenge": {
+        "id": "C7334",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.03016,
+        "longitude": 121.74795
+      }
+    },
+    {
+      "id": "7335",
+      "name": "Pingxi",
+      "latitude": 25.02571,
+      "longitude": 121.74019,
+      "adjacentStationIds": [
+        "7334",
+        "7336"
+      ],
+      "challenge": {
+        "id": "C7335",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 25.02571,
+        "longitude": 121.74019
+      }
+    },
+    {
+      "id": "7336",
+      "name": "Jingtong",
+      "latitude": 25.02391,
+      "longitude": 121.72391,
+      "adjacentStationIds": [
+        "7335"
+      ],
+      "challenge": {
+        "id": "C7336",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 25.02391,
+        "longitude": 121.72391
+      }
+    },
+    {
+      "id": "7350",
+      "name": "Houtong",
+      "latitude": 25.08702,
+      "longitude": 121.82743,
+      "adjacentStationIds": [
+        "7330",
+        "7360"
+      ],
+      "challenge": {
+        "id": "C7350",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.08702,
+        "longitude": 121.82743
+      }
+    },
+    {
+      "id": "7360",
+      "name": "Ruifang",
+      "latitude": 25.10861,
+      "longitude": 121.80596,
+      "adjacentStationIds": [
+        "7350",
+        "7361",
+        "7380"
+      ],
+      "challenge": {
+        "id": "C7360",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.10861,
+        "longitude": 121.80596
+      }
+    },
+    {
+      "id": "7361",
+      "name": "Haikeguan",
+      "latitude": 25.13754,
+      "longitude": 121.79997,
+      "adjacentStationIds": [
+        "7360",
+        "7362"
+      ],
+      "challenge": {
+        "id": "C7361",
+        "type": "multiplier",
+        "baseValue": 45,
+        "latitude": 25.13754,
+        "longitude": 121.79997
+      }
+    },
+    {
+      "id": "7362",
+      "name": "Badouzi",
+      "latitude": 25.13528,
+      "longitude": 121.80286,
+      "adjacentStationIds": [
+        "7361"
+      ],
+      "challenge": {
+        "id": "C7362",
+        "type": "call-your-shot",
+        "baseValue": 10,
+        "latitude": 25.13528,
+        "longitude": 121.80286
+      }
+    },
+    {
+      "id": "7380",
+      "name": "Sijiaoting",
+      "latitude": 25.10281,
+      "longitude": 121.76195,
+      "adjacentStationIds": [
+        "7360",
+        "7390"
+      ],
+      "challenge": {
+        "id": "C7380",
+        "type": "standard",
+        "baseValue": 100,
+        "latitude": 25.10281,
+        "longitude": 121.76195
+      }
+    },
+    {
+      "id": "7390",
+      "name": "Nuannuan",
+      "latitude": 25.10231,
+      "longitude": 121.74031,
+      "adjacentStationIds": [
+        "0920",
+        "7380"
+      ],
+      "challenge": {
+        "id": "C7390",
+        "type": "steal",
+        "baseValue": 45,
+        "latitude": 25.10231,
+        "longitude": 121.74031
+      }
+    }
+  ],
+  "rules": {
+    "initialBoardSize": 3,
+    "refillSize": 2,
+    "boardMax": 10,
+    "failureBoostPercent": 50,
+    "maxChipLead": 5,
+    "startingChipBalance": 30,
+    "dayCount": 5,
+    "dayMultipliers": [
+      1,
+      1.1,
+      1.2,
+      1.3,
+      1.4
+    ]
+  },
+  "map": {
+    "styleUrl": "https://jltg-stations.pages.dev/osmTheme.json",
+    "initialView": {
+      "center": [
+        121,
+        23.7
+      ],
+      "zoom": 7,
+      "pitch": 0,
+      "bearing": 0
+    },
+    "maxBounds": {
+      "minLat": 119.8,
+      "maxLat": 122.35,
+      "minLng": 21.7,
+      "maxLng": 25.5
+    }
+  }
+}
