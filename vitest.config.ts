@@ -5,7 +5,7 @@ import sqlocal from 'sqlocal/vite';
 export default defineConfig({
 	plugins: [sveltekit(), sqlocal()],
 	test: {
-		environment: 'happy-dom',
+		environment: 'jsdom',
 		globals: true,
 		setupFiles: ['./src/test/setup.ts'],
 		include: ['src/**/*.{test,spec}.{js,ts}'],
