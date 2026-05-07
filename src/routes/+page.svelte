@@ -26,13 +26,14 @@
 	let showReplicateMenu = $state(false);
 	let replicatingTeamId = $state<string | null>(null);
 	let selectedStationId = $state<string | null>(null);
-	let focusStationRequest = $state<{ stationId: string; nonce: number } | null>(null);
 	let generatedStartingChallengeIds = $state<string[] | null>(null);
 	let setupInFlight = $state(false);
 	let shareMenuMessage: string | null = $state(null);
 	let showResetDrawer = $state(false);
 	let tileCacheProgress = $state<{ cachedCount: number; totalCount: number } | null>(null);
 	let nowMs = $state(Date.now());
+	let zoom: number | null = $state(null);
+	let center: [number, number] | null = $state(null);
 
 	const selectedStation = $derived(
 		selectedStationId ? (game.stationDetailsById[selectedStationId] ?? null) : null
@@ -129,7 +130,8 @@
 					stations={game.stations}
 					overlayLabel={dayDetails}
 					bind:selectedStationId
-					{focusStationRequest}
+					bind:zoom
+					bind:center
 				/>
 			</div>
 			<aside class="desktop-sidebar">
@@ -246,7 +248,10 @@
 		teams={game.teams}
 		{replicatingTeamId}
 		onReplicate={async (input) => {
-			focusStationRequest = { stationId: input.stationId, nonce: Date.now() };
+			const station = game.stations.find((entry) => entry.id === input.stationId);
+			if (!station || !game.session) return;
+			center = [station.longitude, station.latitude];
+			zoom = Math.max(game.session.config.map.initialView.zoom, 12);
 			selectedStationId = input.stationId;
 			await replicateManual(input);
 		}}

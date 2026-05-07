@@ -9,18 +9,18 @@
 		session = null,
 		stations = [],
 		selectedStationId = $bindable(null),
-		focusStationRequest = null,
+		zoom = $bindable(null),
+		center = $bindable(null),
 		overlayLabel = null
 	}: {
 		session: GameSession | null;
 		stations?: StationSummary[];
 		selectedStationId: string | null;
-		focusStationRequest?: { stationId: string; nonce: number } | null;
+		zoom: number | null;
+		center: [number, number] | null;
 		overlayLabel?: string | null;
 	} = $props();
 
-	let center = $state<[number, number] | null>(null);
-	let zoom = $state<number | null>(null);
 	let mapConfigKey = $state<string | null>(null);
 
 	const fallbackStyle: StyleSpecification = {
@@ -56,14 +56,6 @@
 		center = [...session.config.map.initialView.center] as [number, number];
 		zoom = session.config.map.initialView.zoom;
 		mapConfigKey = nextKey;
-	});
-
-	$effect(() => {
-		if (!session || !focusStationRequest) return;
-		const station = stations.find((entry) => entry.id === focusStationRequest.stationId);
-		if (!station) return;
-		center = [station.longitude, station.latitude];
-		zoom = Math.max(session.config.map.initialView.zoom, 12);
 	});
 </script>
 
