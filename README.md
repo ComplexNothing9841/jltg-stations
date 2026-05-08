@@ -9,6 +9,7 @@ Offline-first SvelteKit app based on Jet Lag: The Game S17. See https://www.redd
 - `pnpm format`
 - `pnpm lint`
 - `pnpm check`
+- `pnpm test`
 
 ## Config shape
 
