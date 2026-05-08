@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { setupTestDatabase, resetTestDatabase, teardownTestDatabase } from '../db/__test-helpers__/db-setup';
+import { setupTestDatabase, resetTestDatabase } from '../db/__test-helpers__/db-setup';
 import { seedTestGame, createMockGameConfig } from '../db/__test-helpers__/fixtures';
 import {
 	depositAtStation,
@@ -39,13 +39,13 @@ describe('depositAtStation', () => {
 		expect(raw.deposits).toHaveLength(1);
 		expect(raw.deposits[0].teamId).toBe('team1');
 		expect(raw.deposits[0].amount).toBe(50);
-		expect(raw.actions.filter(a => a.kind === 'deposit')).toHaveLength(1);
+		expect(raw.actions.filter((a) => a.kind === 'deposit')).toHaveLength(1);
 	});
 
 	it('deducts amount from team balance', async () => {
 		const rawBefore = await getRawState();
 		const projectedBefore = projectGameState(rawBefore, null);
-		const team1Before = projectedBefore.teams.find(t => t.id === 'team1');
+		const team1Before = projectedBefore.teams.find((t) => t.id === 'team1');
 		expect(team1Before?.balance).toBe(500); // Starting balance
 
 		await depositAtStation({
@@ -56,7 +56,7 @@ describe('depositAtStation', () => {
 
 		const rawAfter = await getRawState();
 		const projectedAfter = projectGameState(rawAfter, null);
-		const team1After = projectedAfter.teams.find(t => t.id === 'team1');
+		const team1After = projectedAfter.teams.find((t) => t.id === 'team1');
 		expect(team1After?.balance).toBe(400); // 500 - 100
 	});
 
@@ -151,7 +151,7 @@ describe('depositAtStation', () => {
 
 		const raw = await getRawState();
 		const projected = projectGameState(raw, null);
-		const station = projected.stations.find(s => s.id === 'station1');
+		const station = projected.stations.find((s) => s.id === 'station1');
 
 		expect(station?.ownership.ownerTeamId).toBe('team1');
 		expect(station?.ownership.margin).toBe(60);
@@ -172,7 +172,7 @@ describe('depositAtStation', () => {
 
 		const raw = await getRawState();
 		const projected = projectGameState(raw, null);
-		const station = projected.stations.find(s => s.id === 'station1');
+		const station = projected.stations.find((s) => s.id === 'station1');
 
 		expect(station?.ownership.ownerTeamId).toBe('team1');
 		expect(station?.ownership.margin).toBe(10); // 50 - 40
@@ -212,7 +212,7 @@ describe('completeBoardChallenge', () => {
 
 	it('awards correct reward for standard challenge', async () => {
 		const raw = await getRawState();
-		const board = raw.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const board = raw.boardChallenges.find((b) => b.challengeId === 'challenge1');
 		expect(board).toBeTruthy();
 
 		const result = await completeBoardChallenge({
@@ -225,7 +225,9 @@ describe('completeBoardChallenge', () => {
 		expect(result.kind).toBe('complete');
 
 		const rawAfter = await getRawState();
-		const attempt = rawAfter.attempts.find(a => a.teamId === 'team1' && a.challengeId === 'challenge1');
+		const attempt = rawAfter.attempts.find(
+			(a) => a.teamId === 'team1' && a.challengeId === 'challenge1'
+		);
 		expect(attempt).toBeTruthy();
 		expect(attempt?.outcome).toBe('complete');
 		expect(attempt?.rewardDelta).toBe(100); // baseValue 100 × dayMultiplier 1
@@ -233,10 +235,10 @@ describe('completeBoardChallenge', () => {
 
 	it('increases team balance after completion', async () => {
 		const raw = await getRawState();
-		const board = raw.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const board = raw.boardChallenges.find((b) => b.challengeId === 'challenge1');
 
 		const projectedBefore = projectGameState(raw, null);
-		const team1Before = projectedBefore.teams.find(t => t.id === 'team1');
+		const team1Before = projectedBefore.teams.find((t) => t.id === 'team1');
 		expect(team1Before?.balance).toBe(500);
 
 		await completeBoardChallenge({
@@ -248,13 +250,13 @@ describe('completeBoardChallenge', () => {
 
 		const rawAfter = await getRawState();
 		const projectedAfter = projectGameState(rawAfter, null);
-		const team1After = projectedAfter.teams.find(t => t.id === 'team1');
+		const team1After = projectedAfter.teams.find((t) => t.id === 'team1');
 		expect(team1After?.balance).toBe(600); // 500 + 100
 	});
 
 	it('resolves board and refills with new challenge', async () => {
 		const raw = await getRawState();
-		const board = raw.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const board = raw.boardChallenges.find((b) => b.challengeId === 'challenge1');
 
 		await completeBoardChallenge({
 			teamId: 'team1',
@@ -264,12 +266,12 @@ describe('completeBoardChallenge', () => {
 		});
 
 		const rawAfter = await getRawState();
-		const resolvedBoard = rawAfter.boardChallenges.find(bc => bc.id === board!.id);
+		const resolvedBoard = rawAfter.boardChallenges.find((bc) => bc.id === board!.id);
 		expect(resolvedBoard?.status).toBe('completed');
 		expect(resolvedBoard?.resolvedAt).toBeTruthy();
 
 		// Should have refilled with a new challenge
-		const activeBoards = rawAfter.boardChallenges.filter(b => b.status === 'active');
+		const activeBoards = rawAfter.boardChallenges.filter((b) => b.status === 'active');
 		expect(activeBoards.length).toBeGreaterThanOrEqual(2); // At least 2 active (one original + refill)
 	});
 
@@ -323,7 +325,7 @@ describe('completeBoardChallenge', () => {
 		await initializeStartingBoard(['challenge1', 'challenge2']); // Provide both
 
 		const raw = await getRawState();
-		const board = raw.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const board = raw.boardChallenges.find((b) => b.challengeId === 'challenge1');
 
 		await completeBoardChallenge({
 			teamId: 'team1',
@@ -334,7 +336,7 @@ describe('completeBoardChallenge', () => {
 		});
 
 		const rawAfter = await getRawState();
-		const attempt = rawAfter.attempts.find(a => a.challengeId === 'challenge1');
+		const attempt = rawAfter.attempts.find((a) => a.challengeId === 'challenge1');
 		expect(attempt?.quantity).toBe(5);
 		expect(attempt?.rewardDelta).toBe(50); // 10 × 5 × 1
 	});
@@ -354,8 +356,8 @@ describe('failBoardChallenge', () => {
 
 	it('applies failure boost to challenge value', async () => {
 		const rawBefore = await getRawState();
-		const challengeBefore = rawBefore.challenges.find(c => c.id === 'challenge1');
-		const board = rawBefore.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const challengeBefore = rawBefore.challenges.find((c) => c.id === 'challenge1');
+		const board = rawBefore.boardChallenges.find((b) => b.challengeId === 'challenge1');
 		expect(challengeBefore?.currentValue).toBe(100);
 
 		await failBoardChallenge({
@@ -366,14 +368,14 @@ describe('failBoardChallenge', () => {
 		});
 
 		const rawAfter = await getRawState();
-		const challengeAfter = rawAfter.challenges.find(c => c.id === 'challenge1');
+		const challengeAfter = rawAfter.challenges.find((c) => c.id === 'challenge1');
 		expect(challengeAfter?.currentValue).toBe(111); // Math.ceil(100 * 1.1)
 		expect(challengeAfter?.failureCountTotal).toBe(1);
 	});
 
 	it('records failure attempt with zero reward', async () => {
 		const raw = await getRawState();
-		const board = raw.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const board = raw.boardChallenges.find((b) => b.challengeId === 'challenge1');
 
 		await failBoardChallenge({
 			teamId: 'team1',
@@ -383,16 +385,18 @@ describe('failBoardChallenge', () => {
 		});
 
 		const rawAfter = await getRawState();
-		const attempt = rawAfter.attempts.find(a => a.teamId === 'team1' && a.challengeId === 'challenge1');
+		const attempt = rawAfter.attempts.find(
+			(a) => a.teamId === 'team1' && a.challengeId === 'challenge1'
+		);
 		expect(attempt?.outcome).toBe('fail');
 		expect(attempt?.rewardDelta).toBe(0);
 	});
 
 	it('does not change team balance on failure', async () => {
 		const raw = await getRawState();
-		const board = raw.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const board = raw.boardChallenges.find((b) => b.challengeId === 'challenge1');
 		const projectedBefore = projectGameState(raw, null);
-		const team1Before = projectedBefore.teams.find(t => t.id === 'team1');
+		const team1Before = projectedBefore.teams.find((t) => t.id === 'team1');
 
 		await failBoardChallenge({
 			teamId: 'team1',
@@ -403,13 +407,13 @@ describe('failBoardChallenge', () => {
 
 		const rawAfter = await getRawState();
 		const projectedAfter = projectGameState(rawAfter, null);
-		const team1After = projectedAfter.teams.find(t => t.id === 'team1');
+		const team1After = projectedAfter.teams.find((t) => t.id === 'team1');
 		expect(team1After?.balance).toBe(team1Before?.balance);
 	});
 
 	it('marks board as failed_out when all teams fail', async () => {
 		const raw = await getRawState();
-		const board = raw.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const board = raw.boardChallenges.find((b) => b.challengeId === 'challenge1');
 
 		// Both teams fail
 		await failBoardChallenge({
@@ -427,14 +431,14 @@ describe('failBoardChallenge', () => {
 		});
 
 		const rawAfter = await getRawState();
-		const boardAfter = rawAfter.boardChallenges.find(bc => bc.id === board!.id);
+		const boardAfter = rawAfter.boardChallenges.find((bc) => bc.id === board!.id);
 		expect(boardAfter?.status).toBe('failed_out');
 		expect(boardAfter?.resolvedAt).toBeTruthy();
 	});
 
 	it('refills board after all teams fail', async () => {
 		const raw = await getRawState();
-		const board = raw.boardChallenges.find(b => b.challengeId === 'challenge1');
+		const board = raw.boardChallenges.find((b) => b.challengeId === 'challenge1');
 
 		await failBoardChallenge({
 			teamId: 'team1',
@@ -451,7 +455,7 @@ describe('failBoardChallenge', () => {
 		});
 
 		const rawAfter = await getRawState();
-		const activeBoards = rawAfter.boardChallenges.filter(b => b.status === 'active');
+		const activeBoards = rawAfter.boardChallenges.filter((b) => b.status === 'active');
 		expect(activeBoards.length).toBeGreaterThanOrEqual(2);
 	});
 });
@@ -515,8 +519,8 @@ describe('doDebt', () => {
 
 		const rawBefore = await getRawState();
 		const projectedBefore = projectGameState(rawBefore, null);
-		const team1Before = projectedBefore.teams.find(t => t.id === 'team1');
-		const team2Before = projectedBefore.teams.find(t => t.id === 'team2');
+		const team1Before = projectedBefore.teams.find((t) => t.id === 'team1');
+		const team2Before = projectedBefore.teams.find((t) => t.id === 'team2');
 
 		await doDebt({
 			teamId: 'team2',
@@ -527,8 +531,8 @@ describe('doDebt', () => {
 
 		const rawAfter = await getRawState();
 		const projectedAfter = projectGameState(rawAfter, null);
-		const team1After = projectedAfter.teams.find(t => t.id === 'team1');
-		const team2After = projectedAfter.teams.find(t => t.id === 'team2');
+		const team1After = projectedAfter.teams.find((t) => t.id === 'team1');
+		const team2After = projectedAfter.teams.find((t) => t.id === 'team2');
 
 		expect(team1After?.balance).toBe(team1Before!.balance + 30);
 		expect(team2After?.balance).toBe(team2Before!.balance - 30);
@@ -604,7 +608,7 @@ describe('initializeStartingBoard', () => {
 		expect(challengeIds).toEqual(['challenge1', 'challenge2']);
 
 		const raw = await getRawState();
-		const activeBoards = raw.boardChallenges.filter(b => b.status === 'active');
+		const activeBoards = raw.boardChallenges.filter((b) => b.status === 'active');
 		expect(activeBoards).toHaveLength(2);
 	});
 
@@ -615,7 +619,9 @@ describe('initializeStartingBoard', () => {
 		expect(challengeIds[1]).toBe('challenge1');
 
 		const raw = await getRawState();
-		const boards = raw.boardChallenges.filter(b => b.status === 'active').sort((a, b) => a.slotOrder - b.slotOrder);
+		const boards = raw.boardChallenges
+			.filter((b) => b.status === 'active')
+			.sort((a, b) => a.slotOrder - b.slotOrder);
 		expect(boards[0].challengeId).toBe('challenge2');
 		expect(boards[1].challengeId).toBe('challenge1');
 	});
@@ -627,9 +633,9 @@ describe('initializeStartingBoard', () => {
 	});
 
 	it('throws when unknown challenge ID provided', async () => {
-		await expect(
-			initializeStartingBoard(['challenge1', 'unknown-id'])
-		).rejects.toThrow('Unknown challenge');
+		await expect(initializeStartingBoard(['challenge1', 'unknown-id'])).rejects.toThrow(
+			'Unknown challenge'
+		);
 	});
 
 	it('returns empty array when board already initialized', async () => {
@@ -654,10 +660,12 @@ describe('initializeStartingBoard', () => {
 		const challengeIds = await initializeStartingBoard();
 
 		expect(challengeIds).toHaveLength(2);
-		expect(challengeIds.every(id => ['challenge1', 'challenge2', 'challenge3'].includes(id))).toBe(true);
+		expect(
+			challengeIds.every((id) => ['challenge1', 'challenge2', 'challenge3'].includes(id))
+		).toBe(true);
 
 		const raw = await getRawState();
-		const activeBoards = raw.boardChallenges.filter(b => b.status === 'active');
+		const activeBoards = raw.boardChallenges.filter((b) => b.status === 'active');
 		expect(activeBoards).toHaveLength(2);
 	});
 });

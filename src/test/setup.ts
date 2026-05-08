@@ -7,7 +7,9 @@ const originalRandomUUID = global.crypto.randomUUID;
 
 beforeEach(() => {
 	counter = 0;
-	global.crypto.randomUUID = vi.fn(() => `test-uuid-${counter++}`);
+	global.crypto.randomUUID = vi.fn(
+		() => `test-uuid-${counter++}` as `${string}-${string}-${string}-${string}-${string}`
+	);
 });
 
 // Clean up after each test
